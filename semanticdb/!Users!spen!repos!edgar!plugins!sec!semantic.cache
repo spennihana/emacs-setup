@@ -1,0 +1,82 @@
+;; Object semanticdb-project-database-file-1ffb26647118
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffb26647118"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffb26647134"
+      :major-mode python-mode
+      :tags 
+        '( ("peewee" include nil nil [1 14])
+            ("playhouse.sqliteq" include nil nil [15 64])
+            ("atexit" include nil nil [65 78])
+            ("proxy" variable nil nil [80 102])
+            ("BaseModel" type
+               (:superclasses ("peewee.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("database" variable nil (reparse-symbol indented_block_body) [159 175]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [139 176]))                  
+                :type "class")
+                nil [104 176])
+            ("Ticker" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("cik" variable nil (reparse-symbol indented_block_body) [207 234])
+                    ("ticker" variable nil (reparse-symbol indented_block_body) [239 269]))                  
+                :type "class")
+                nil [178 270])
+            ("CIKIndex" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("cik" variable nil (reparse-symbol indented_block_body) [303 320])
+                    ("company" variable nil (reparse-symbol indented_block_body) [325 346]))                  
+                :type "class")
+                nil [272 347])
+            ("SC_13" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("report_id" variable nil (reparse-symbol indented_block_body) [377 410])
+                    ("report_date" variable nil (reparse-symbol indented_block_body) [415 444])
+                    ("report_type" variable nil (reparse-symbol indented_block_body) [449 474])
+                    ("filed_by" variable nil (reparse-symbol indented_block_body) [479 501])
+                    ("filed_by_cik" variable nil (reparse-symbol indented_block_body) [506 532])
+                    ("filed_by_ticker" variable nil (reparse-symbol indented_block_body) [537 566])
+                    ("subject" variable nil (reparse-symbol indented_block_body) [571 592])
+                    ("subject_cik" variable nil (reparse-symbol indented_block_body) [597 622])
+                    ("subject_ticker" variable nil (reparse-symbol indented_block_body) [627 655])
+                    ("report_url" variable nil (reparse-symbol indented_block_body) [660 684]))                  
+                :type "class")
+                nil [349 685])
+            ("init_db" function (:arguments 
+              ( ("config" variable nil (reparse-symbol function_parameters) [699 705])
+                ("debug" variable nil (reparse-symbol function_parameters) [707 712]))              ) nil [687 1341])
+            ("_stop_worker_threads" function (:decorators 
+              ( ("atexit.register" function (:type "decorator") nil nil))              ) nil [1343 1409]))          
+      :file "db.py"
+      :pointmax 1409
+      :fsize 1408
+      :lastmodtime '(24564 11351 319740 383000)
+      :unmatched-syntax '(($EOI 1410 . 1410)))
+    (semanticdb-table "semanticdb-table-1ffb269387fc"
+      :major-mode python-mode
+      :tags 
+        '( ("BaseModel" type
+               (:superclasses ("peewee.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("database" variable nil (reparse-symbol indented_block_body) [57 73]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [37 74]))                  
+                :type "class")
+                nil [2 74]))          
+      :file "models.py"
+      :pointmax 74
+      :fsize 73
+      :lastmodtime '(24570 7560 909385 196000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!edgar!plugins!sec!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

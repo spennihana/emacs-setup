@@ -1,0 +1,235 @@
+;; Object semanticdb-project-database-file-1ffd5cd623cc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffd5cd623cc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffd5cd63d4c"
+      :major-mode python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 674
+      :fsize 673
+      :lastmodtime '(24250 56501 647006 778000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffd5c6f2d1c"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("os" include nil nil [41 50])
+            ("typing" include nil nil [51 144])
+            ("discord_common" include nil nil [146 177])
+            ("discord_common.etcd.ring" include nil nil [178 227])
+            ("Service" include nil nil [243 257])
+            ("ServiceWatcher" include nil nil [280 301])
+            ("if" code nil nil [303 452])
+            ("Directory" type
+               (:superclasses ("object")
+                :members 
+                  ( ("_instances" variable nil (reparse-symbol indented_block_body) [483 498])
+                    ("instance" function
+                       (:documentation "Discovery singleton."
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [590 593])
+                            ("args" variable nil (reparse-symbol function_parameters) [595 600])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [602 610]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [560 870])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1079 1103])
+                            ("self" code nil (reparse-symbol indented_block_body) [1112 1178])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1188 1207]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [897 901])
+                            ("base_key" variable nil (reparse-symbol function_parameters) [911 919])
+                            ("etcd_client" variable nil (reparse-symbol function_parameters) [955 966])
+                            ("args" variable nil (reparse-symbol function_parameters) [1016 1021])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1031 1039]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [875 1243])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1261 1265]))                          )
+                        (reparse-symbol indented_block_body) [1248 1363])
+                    ("register" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1390 1394])
+                            ("service" variable nil (reparse-symbol function_parameters) [1404 1411])
+                            ("ttl" variable nil (reparse-symbol function_parameters) [1438 1441]))                          
+                        :documentation "Registers a service class.")
+                        (reparse-symbol indented_block_body) [1368 1622])
+                    ("unregister" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1642 1646])
+                            ("service" variable nil (reparse-symbol function_parameters) [1648 1655]))                          
+                        :documentation "Unregisters a service.")
+                        (reparse-symbol indented_block_body) [1627 1784])
+                    ("names" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1813 1817]))                          
+                        :documentation "Returns the names of all registered services.")
+                        (reparse-symbol indented_block_body) [1789 2090])
+                    ("select" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2115 2119])
+                            ("name" variable nil (reparse-symbol function_parameters) [2129 2133])
+                            ("selector" variable nil (reparse-symbol function_parameters) [2156 2164]))                          
+                        :documentation "Selects an instance of a service based on a selector.")
+                        (reparse-symbol indented_block_body) [2095 2387])
+                    ("select_all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2416 2420])
+                            ("name" variable nil (reparse-symbol function_parameters) [2430 2434])
+                            ("selector" variable nil (reparse-symbol function_parameters) [2457 2465]))                          
+                        :documentation "Selects all instances of a service based on a selector.")
+                        (reparse-symbol indented_block_body) [2392 2686])
+                    ("get_watcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2716 2720])
+                            ("service_name" variable nil (reparse-symbol function_parameters) [2730 2742])
+                            ("with_ring" variable nil (reparse-symbol function_parameters) [2765 2774]))                          
+                        :documentation "Creates a provider for a specific service.")
+                        (reparse-symbol indented_block_body) [2691 3372])
+                    ("key_for" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3389 3393])
+                            ("service" variable nil (reparse-symbol function_parameters) [3395 3402]))                          
+                        :documentation "Returns a path for a given service.")
+                        (reparse-symbol indented_block_body) [3377 3543])
+                    ("_key_for" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3570 3574])
+                            ("service_name" variable nil (reparse-symbol function_parameters) [3584 3596])
+                            ("service_id" variable nil (reparse-symbol function_parameters) [3619 3629]))                          
+                        :documentation "Returns a path for a service.")
+                        (reparse-symbol indented_block_body) [3548 3903]))                  
+                :type "class")
+                nil [454 3903]))          
+      :file "directory.py"
+      :pointmax 3903
+      :fsize 3902
+      :lastmodtime '(24373 42588 801041 445000)
+      :unmatched-syntax '((NAME 3129 . 3133) (IF 3213 . 3215) (ELSE 3226 . 3230) (FROM 325 . 329) (PERIOD 330 . 331) (FROM 258 . 262) (PERIOD 263 . 264) (FROM 229 . 233) (PERIOD 234 . 235)))
+    (semanticdb-table "semanticdb-table-1ffd5cb71b84"
+      :file "Service.py"
+      :fsize 2015
+      :lastmodtime '(24373 42588 801512 653000))
+    (semanticdb-table "semanticdb-table-1ffd5d633ffc"
+      :major-mode python-mode
+      :tags nil
+      :file "exceptions.py"
+      :pointmax 201
+      :fsize 200
+      :lastmodtime '(24250 56501 647298 54000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffd5cdbffec"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("typing" include nil nil [41 74])
+            ("simplejson" include nil nil [76 101])
+            ("Service" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [390 406])
+                            ("self" variable nil (reparse-symbol indented_block_body) [415 437])
+                            ("self" variable nil (reparse-symbol indented_block_body) [446 462])
+                            ("self" code nil (reparse-symbol indented_block_body) [471 495])
+                            ("self" code nil (reparse-symbol indented_block_body) [504 534]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [153 157])
+                            ("name" variable nil (reparse-symbol function_parameters) [167 171])
+                            ("port" variable nil (reparse-symbol function_parameters) [194 198])
+                            ("address" variable nil (reparse-symbol function_parameters) [221 228])
+                            ("metadata" variable nil (reparse-symbol function_parameters) [263 271])
+                            ("ports" variable nil (reparse-symbol function_parameters) [310 315]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [131 535])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [552 556]))                          )
+                        (reparse-symbol indented_block_body) [540 631])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [649 653]))                          )
+                        (reparse-symbol indented_block_body) [636 742])
+                    ("__hash__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [760 764]))                          )
+                        (reparse-symbol indented_block_body) [747 822])
+                    ("__eq__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [838 842])
+                            ("other" variable nil (reparse-symbol function_parameters) [844 849]))                          )
+                        (reparse-symbol indented_block_body) [827 1002])
+                    ("id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1028 1032]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1007 1114])
+                    ("deserialize" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1152 1155])
+                            ("value" variable nil (reparse-symbol function_parameters) [1157 1162]))                          )
+                        (reparse-symbol indented_block_body) [1119 1474])
+                    ("serialize" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1493 1497]))                          )
+                        (reparse-symbol indented_block_body) [1479 1782])
+                    ("merge" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1797 1801])
+                            ("other" variable nil (reparse-symbol function_parameters) [1803 1808]))                          )
+                        (reparse-symbol indented_block_body) [1787 2016]))                  
+                :type "class")
+                nil [104 2016]))          
+      :file "service.py"
+      :pointmax 2016
+      :fsize 2015
+      :lastmodtime '(24373 42588 801512 653000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffd5cd4386c"
+      :major-mode python-mode
+      :tags nil
+      :file "service_announcer.py"
+      :pointmax 2322
+      :fsize 2321
+      :lastmodtime '(24250 56501 647651 121000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffd5c6fd3d4"
+      :major-mode python-mode
+      :tags nil
+      :file "service_watcher.py"
+      :pointmax 7401
+      :fsize 7400
+      :lastmodtime '(24373 42588 802118 545000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!discord!discord_common!py!discord_common!discovery!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

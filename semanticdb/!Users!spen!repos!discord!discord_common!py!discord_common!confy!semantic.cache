@@ -1,0 +1,236 @@
+;; Object semanticdb-project-database-file-1ffb378a13a0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffb378a13a0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffb378a11cc"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("collections" include nil nil [41 59])
+            ("copy" include nil nil [60 71])
+            ("json" include nil nil [72 83])
+            ("collections" include nil nil [84 119])
+            ("six" include nil nil [121 131])
+            ("six.moves" include nil nil [132 159])
+            ("discord_common.etcd.dict" include nil nil [161 214])
+            ("_convert_unicode" function (:arguments 
+              ( ("data" variable nil (reparse-symbol function_parameters) [238 242]))              ) nil [217 745])
+            ("Confy" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [834 856])
+                            ("self" variable nil (reparse-symbol indented_block_body) [865 887])
+                            ("self" variable nil (reparse-symbol indented_block_body) [896 933])
+                            ("if" code nil (reparse-symbol indented_block_body) [977 1051])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1059 1082])
+                            ("self" code nil (reparse-symbol indented_block_body) [1092 1143])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1243 1485])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1555 1601])
+                            ("for" code nil (reparse-symbol indented_block_body) [1610 1706])
+                            ("self" code nil (reparse-symbol indented_block_body) [1715 1735]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [785 789])
+                            ("deployment_context" variable nil (reparse-symbol function_parameters) [791 809])
+                            ("backend" variable nil (reparse-symbol function_parameters) [811 818]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [772 1736])
+                    ("_merge_config" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1759 1763]))                          
+                        :documentation "
+        Merge all of the configs into one config. Overriding as configs are merged.
+        ")
+                        (reparse-symbol indented_block_body) [1741 2291])
+                    ("as_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2308 2312]))                          
+                        :documentation "
+        Returns the config as a dictionary.
+
+        :return: dict
+        ")
+                        (reparse-symbol indented_block_body) [2296 2450])
+                    ("_on_backend_updated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2479 2483])
+                            ("_new_config" variable nil (reparse-symbol function_parameters) [2485 2496]))                          )
+                        (reparse-symbol indented_block_body) [2455 2585])
+                    ("add_watcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2606 2610])
+                            ("watcher" variable nil (reparse-symbol function_parameters) [2612 2619])
+                            ("keys" variable nil (reparse-symbol function_parameters) [2621 2625]))                          )
+                        (reparse-symbol indented_block_body) [2590 2856])
+                    ("remove_watcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2880 2884])
+                            ("watcher" variable nil (reparse-symbol function_parameters) [2886 2893])
+                            ("keys" variable nil (reparse-symbol function_parameters) [2895 2899]))                          )
+                        (reparse-symbol indented_block_body) [2861 3298])
+                    ("_notify_watchers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3324 3328])
+                            ("notify_keys" variable nil (reparse-symbol function_parameters) [3330 3341]))                          )
+                        (reparse-symbol indented_block_body) [3303 3604])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3621 3625]))                          )
+                        (reparse-symbol indented_block_body) [3609 3666])
+                    ("__contains__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3688 3692])
+                            ("item" variable nil (reparse-symbol function_parameters) [3694 3698]))                          )
+                        (reparse-symbol indented_block_body) [3671 3742])
+                    ("__iter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3760 3764]))                          )
+                        (reparse-symbol indented_block_body) [3747 3806])
+                    ("__getitem__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3827 3831])
+                            ("item" variable nil (reparse-symbol function_parameters) [3833 3837]))                          )
+                        (reparse-symbol indented_block_body) [3811 3879]))                  
+                :type "class")
+                nil [747 3879])
+            ("EtcdBackend" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("keys" variable nil (reparse-symbol indented_block_body) [3977 4138])
+                            ("self" variable nil (reparse-symbol indented_block_body) [4147 4235])
+                            ("for" code nil (reparse-symbol indented_block_body) [4245 4289]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3925 3929])
+                            ("deployment_context" variable nil (reparse-symbol function_parameters) [3931 3949])
+                            ("serializer" variable nil (reparse-symbol function_parameters) [3951 3961]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3912 4289])
+                    ("add_watcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4310 4314])
+                            ("watcher" variable nil (reparse-symbol function_parameters) [4316 4323]))                          )
+                        (reparse-symbol indented_block_body) [4294 4391])
+                    ("dicts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4406 4410]))                          )
+                        (reparse-symbol indented_block_body) [4396 4440]))                  
+                :type "class")
+                nil [3881 4440])
+            ("DiskBackend" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [4525 4541])
+                            ("for" code nil (reparse-symbol indented_block_body) [4550 4666]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4486 4490])
+                            ("files" variable nil (reparse-symbol function_parameters) [4492 4497])
+                            ("serializer" variable nil (reparse-symbol function_parameters) [4499 4509]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4473 4666])
+                    ("add_watcher" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4687 4691])
+                            ("watcher" variable nil (reparse-symbol function_parameters) [4693 4700]))                          )
+                        (reparse-symbol indented_block_body) [4671 4716])
+                    ("dicts" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4731 4735]))                          )
+                        (reparse-symbol indented_block_body) [4721 4765]))                  
+                :type "class")
+                nil [4442 4765]))          
+      :file "confy.py"
+      :pointmax 4765
+      :fsize 4764
+      :lastmodtime '(24250 56501 638889 919000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffb378af2c8"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("os" include nil nil [41 50])
+            ("socket" include nil nil [51 64])
+            ("toml" include nil nil [66 77])
+            ("_APPLICATION_KEY" variable nil nil [79 111])
+            ("_ENVIRONMENT_KEY" variable nil nil [112 144])
+            ("_REGION_KEY" variable nil nil [145 167])
+            ("_DATACENTER_KEY" variable nil nil [168 198])
+            ("_CLUSTER_KEY" variable nil nil [199 223])
+            ("_SERVER_ID_KEY" variable nil nil [224 252])
+            ("_DEPLOYMENT_CONTEXT_FILE_ENV_VAR" variable nil nil [255 323])
+            ("_DEPLOYMENT_CONTEXT_USE_ENV" variable nil nil [470 536])
+            ("_DEPLOYMENT_CONTEXT_PREFIX" variable nil nil [537 599])
+            ("DeploymentContext" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [733 763])
+                            ("self" variable nil (reparse-symbol indented_block_body) [772 802])
+                            ("self" variable nil (reparse-symbol indented_block_body) [811 831])
+                            ("self" variable nil (reparse-symbol indented_block_body) [840 868])
+                            ("self" variable nil (reparse-symbol indented_block_body) [877 899])
+                            ("self" variable nil (reparse-symbol indented_block_body) [908 934]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [652 656])
+                            ("application" variable nil (reparse-symbol function_parameters) [658 669])
+                            ("environment" variable nil (reparse-symbol function_parameters) [671 682])
+                            ("region" variable nil (reparse-symbol function_parameters) [684 690])
+                            ("datacenter" variable nil (reparse-symbol function_parameters) [692 702])
+                            ("cluster" variable nil (reparse-symbol function_parameters) [704 711])
+                            ("server_id" variable nil (reparse-symbol function_parameters) [713 722]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [639 935])
+                    ("from_file" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [971 974])
+                            ("filepath" variable nil (reparse-symbol function_parameters) [976 984]))                          )
+                        (reparse-symbol indented_block_body) [940 1435])
+                    ("from_env_vars" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [1475 1478]))                          )
+                        (reparse-symbol indented_block_body) [1440 2265])
+                    ("from_env" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2300 2303])
+                            ("env_var" variable nil (reparse-symbol function_parameters) [2305 2312]))                          )
+                        (reparse-symbol indented_block_body) [2270 2912]))                  
+                :type "class")
+                nil [602 2912]))          
+      :file "deployment_context.py"
+      :pointmax 2912
+      :fsize 2911
+      :lastmodtime '(24323 44016 971863 248000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!discord!discord_common!py!discord_common!confy!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

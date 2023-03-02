@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file-1ffb26124c80
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffb26124c80"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffb26124c9c"
+      :major-mode python-mode
+      :tags 
+        '( ("prefect" include nil nil [1 25])
+            ("urllib.parse" include nil nil [26 45])
+            ("feedparser" include nil nil [46 63])
+            ("FormEntry" variable nil nil [66 92])
+            ("EdgarRSSTask" type
+               (:members 
+                  ( ("SUPPORTED_FORMS" variable nil (reparse-symbol indented_block_body) [118 204])
+                    ("RSS_URL_PARAMS" variable nil (reparse-symbol indented_block_body) [210 468])
+                    ("RSS_URL" code nil (reparse-symbol indented_block_body) [474 564])
+                    ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [614 753])
+                            ("self" variable nil (reparse-symbol indented_block_body) [761 787]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [583 587])
+                            ("str" variable nil (reparse-symbol function_parameters) [600 603]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [570 788]))                  
+                :type "class")
+                nil [94 1258]))          
+      :file "sec_flow.py"
+      :pointmax 1258
+      :fsize 1242
+      :lastmodtime '(24570 7549 768606 543000)
+      :unmatched-syntax '((INDENT_BLOCK 1005 . 1258) (NEWLINE 1004 . 1005) (COLON 1003 . 1004) (MINUS 996 . 997) (GT 997 . 998) (BRACK_BLOCK 983 . 994) (NAME 970 . 977) (COLON 977 . 978) (INDENT_BLOCK 832 . 938) (NEWLINE 831 . 832) (COLON 830 . 831) (DEF 793 . 796) (MINUS 812 . 813) (GT 813 . 814) (NAME 589 . 598) (COLON 598 . 599) (INDENT_BLOCK 1005 . 1258) (NEWLINE 1004 . 1005) (COLON 1003 . 1004) (MINUS 996 . 997) (GT 997 . 998) (BRACK_BLOCK 983 . 994) (NAME 970 . 977) (COLON 977 . 978) (INDENT_BLOCK 832 . 938) (NEWLINE 831 . 832) (COLON 830 . 831) (DEF 793 . 796) (MINUS 812 . 813) (GT 813 . 814) (NAME 589 . 598) (COLON 598 . 599))))
+  :file "!Users!spen!repos!edgar!prefect!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

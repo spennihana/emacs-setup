@@ -1,0 +1,137 @@
+;; Object semanticdb-project-database-file-1febfb194484
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1febfb194484"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1febfb1944a4"
+      :major-mode python-mode
+      :tags 
+        '( ("re" include nil nil [1 10])
+            ("os" include nil nil [11 20])
+            ("yaml" include nil nil [22 33])
+            ("disco.bot.command" include nil nil [34 76])
+            ("client" include nil nil [78 91])
+            ("embeds" include nil nil [92 105])
+            ("datetime" include nil nil [106 135])
+            ("database.models.account" include nil nil [136 179])
+            ("database.models.github" include nil nil [180 257])
+            ("notifications" include nil nil [258 306])
+            ("GREEN_CIRCLE_EMOJI_ID" variable nil nil [308 350])
+            ("RED_CIRCLE_EMOJI_ID" variable nil nil [351 391])
+            ("GREEN_CIRCLE_EMOJI" variable nil nil [392 461])
+            ("RED_CIRCLE_EMOJI" variable nil nil [462 525])
+            ("COMMENT_MENTION_RE" variable nil nil [528 580])
+            ("ISSUE_URL_RE" variable nil nil [581 689])
+            ("WIP_RE" variable nil nil [690 727])
+            ("GITHUB_CONFIG" variable nil nil [730 828])
+            ("WebhookHandler" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [914 928])
+                            ("self" variable nil (reparse-symbol indented_block_body) [937 973])
+                            ("self" variable nil (reparse-symbol indented_block_body) [982 1041])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1050 1106])
+                            ("self" code nil (reparse-symbol indented_block_body) [1115 1133]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [878 882])
+                            ("bot" variable nil (reparse-symbol function_parameters) [884 887])
+                            ("label_patterns" variable nil (reparse-symbol function_parameters) [889 903]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [865 1134])
+                    ("_load_teams" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1155 1159]))                          
+                        :documentation "Load the teams dictionary from our github.yaml file")
+                        (reparse-symbol indented_block_body) [1139 1352])
+                    ("_get_account" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1374 1378])
+                            ("username" variable nil (reparse-symbol function_parameters) [1380 1388])
+                            ("notif" variable nil (reparse-symbol function_parameters) [1390 1395]))                          
+                        :documentation "Gets an account from the given username")
+                        (reparse-symbol indented_block_body) [1357 2074])
+                    ("_msg_project_channel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2104 2108])
+                            ("pr_labels" variable nil (reparse-symbol function_parameters) [2110 2119])
+                            ("embed" variable nil (reparse-symbol function_parameters) [2121 2126]))                          
+                        :documentation "Sends a PR embed to the project channel if a label on the PR is a project label")
+                        (reparse-symbol indented_block_body) [2079 2468])
+                    ("_handle_mentions" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2494 2498])
+                            ("body" variable nil (reparse-symbol function_parameters) [2500 2504])
+                            ("embed" variable nil (reparse-symbol function_parameters) [2506 2511]))                          )
+                        (reparse-symbol indented_block_body) [2473 2962])
+                    ("handle_commit_comment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2993 2997])
+                            ("data" variable nil (reparse-symbol function_parameters) [2999 3003]))                          )
+                        (reparse-symbol indented_block_body) [2967 3225])
+                    ("handle_issue_comment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3255 3259])
+                            ("data" variable nil (reparse-symbol function_parameters) [3261 3265]))                          )
+                        (reparse-symbol indented_block_body) [3230 4002])
+                    ("handle_pull_request_review_comment" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4046 4050])
+                            ("data" variable nil (reparse-symbol function_parameters) [4052 4056]))                          )
+                        (reparse-symbol indented_block_body) [4007 4824])
+                    ("_handle_pr_closed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4851 4855])
+                            ("pull_request" variable nil (reparse-symbol function_parameters) [4857 4869]))                          )
+                        (reparse-symbol indented_block_body) [4829 5681])
+                    ("_handle_review_requested_or_removed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5726 5730])
+                            ("pull_request" variable nil (reparse-symbol function_parameters) [5732 5744])
+                            ("data" variable nil (reparse-symbol function_parameters) [5746 5750]))                          )
+                        (reparse-symbol indented_block_body) [5686 6686])
+                    ("handle_pull_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6715 6719])
+                            ("data" variable nil (reparse-symbol function_parameters) [6721 6725]))                          )
+                        (reparse-symbol indented_block_body) [6691 8227])
+                    ("handle_pull_request_review" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8263 8267])
+                            ("data" variable nil (reparse-symbol function_parameters) [8269 8273]))                          )
+                        (reparse-symbol indented_block_body) [8232 10792]))                  
+                :type "class")
+                nil [831 10792]))          
+      :file "webhook.py"
+      :pointmax 10792
+      :fsize 10791
+      :lastmodtime '(24295 47004 133888 794000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1febfbae6fc8"
+      :file "client.py"
+      :fsize 3261
+      :lastmodtime '(24295 47004 133086 141000))
+    (semanticdb-table "semanticdb-table-1febfbae6ffc"
+      :file "embeds.py"
+      :fsize 2571
+      :lastmodtime '(24295 47004 133239 184000))
+    (semanticdb-table "semanticdb-table-1febfb1a0704"
+      :file "notifications.py"
+      :fsize 6086
+      :lastmodtime '(24295 47004 133715 865000)))
+  :file "!Users!spen!repos!nelly!plugins!github!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

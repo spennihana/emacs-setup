@@ -1,0 +1,86 @@
+;; Object semanticdb-project-database-file-1ff03e4f09e8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff03e4f09e8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff03e505108"
+      :file "brew_packages.py"
+      :fsize 10875
+      :lastmodtime '(24373 42588 737011 724000))
+    (semanticdb-table "semanticdb-table-1ff03e50b888"
+      :major-mode python-mode
+      :tags 
+        '( ("discord_clid.commands.brew.brew_packages" include nil nil [268 332])
+            ("discord_clid.commands.brew.lockfile_types" include nil nil [333 404])
+            ("_LOCKED_BREW_PACKAGES" variable nil nil [406 28608])
+            ("LOCKED_PACKAGES_SETS" variable nil nil [28609 33337]))          
+      :file "generated_brew_packages_lockfile.py"
+      :pointmax 33338
+      :fsize 33337
+      :lastmodtime '(24373 42588 737405 105000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff03e53b0a0"
+      :file "lockfile_types.py"
+      :fsize 475
+      :lastmodtime '(24250 56501 208073 19000))
+    (semanticdb-table "semanticdb-table-1ff03ecf6a80"
+      :major-mode python-mode
+      :tags 
+        '( ("abc" include nil nil [1 11])
+            ("json" include nil nil [12 23])
+            ("logging" include nil nil [24 38])
+            ("os" include nil nil [39 48])
+            ("re" include nil nil [49 58])
+            ("subprocess" include nil nil [59 76])
+            ("pathlib" include nil nil [77 101])
+            ("typing" include nil nil [102 174])
+            ("click" include nil nil [176 188])
+            ("cachetools" include nil nil [189 218])
+            ("discord_clid" include nil nil [220 263])
+            ("discord_clid.commands.brew.brew_packages" include nil nil [264 345])
+            ("discord_clid.commands.brew.lockfile_types" include nil nil [346 417])
+            ("discord_clid.utils" include nil nil [418 454])
+            ("logger" variable nil nil [456 497])
+            ("logger" code nil nil [498 543])
+            ("_CAVEAT_PATH_RE" variable nil nil [545 608])
+            ("_LOCAL_FORMULAS_PATH" code nil nil [609 682])
+            ("BrewInstallError" type
+               (:superclasses ("ValueError")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [725 729]))                  
+                :type "class")
+                nil [685 730])
+            ("PackageDetails" type
+               (:superclasses ("NamedTuple")
+                :members 
+                  ( ("str" code nil (reparse-symbol indented_block_body) [786 789])
+                    ("str" code nil (reparse-symbol indented_block_body) [803 806])
+                    ("bool" code nil (reparse-symbol indented_block_body) [821 825])
+                    ("Optional" code nil (reparse-symbol indented_block_body) [839 852])
+                    ("Sequence" code nil (reparse-symbol indented_block_body) [875 888]))                  
+                :type "class")
+                nil [732 889])
+            ("BrewCoordinator" type
+               (:superclasses ("abc.ABCMeta")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [1067 1071]))                  
+                :type "class")
+                nil [891 2300])
+            ("FormulaBrewCoordinator" type
+               (:superclasses ("BrewCoordinator")
+                :type "class")
+                nil [2302 10339])
+            ("CaskBrewCoordinator" type
+               (:superclasses ("BrewCoordinator")
+                :members 
+                  ( ("" code nil (reparse-symbol indented_block_body) [10413 10417]))                  
+                :type "class")
+                nil [10341 14041]))          
+      :file "package_coordinators.py"
+      :pointmax 14041
+      :fsize 14040
+      :lastmodtime '(24335 33270 302027 533000)
+      :unmatched-syntax '((INDENT_BLOCK 14001 . 14041) (NEWLINE 14000 . 14001) (COLON 13999 . 14000) (MINUS 13981 . 13982) (GT 13982 . 13983) (INDENT_BLOCK 12805 . 13922) (NEWLINE 12804 . 12805) (COLON 12803 . 12804) (MINUS 12786 . 12787) (GT 12787 . 12788) (NAME 12769 . 12779) (COLON 12779 . 12780) (INDENT_BLOCK 10983 . 12719) (NEWLINE 10982 . 10983) (COLON 10981 . 10982) (MINUS 10974 . 10975) (GT 10975 . 10976) (NAME 10939 . 10953) (COLON 10953 . 10954) (INDENT_BLOCK 10722 . 10908) (NEWLINE 10580 . 10581) (COLON 10579 . 10580) (MINUS 10568 . 10569) (GT 10569 . 10570) (NAME 10549 . 10561) (COLON 10561 . 10562) (INDENT_BLOCK 10455 . 10501) (NEWLINE 10454 . 10455) (COLON 10453 . 10454) (DEF 10422 . 10425) (MINUS 10446 . 10447) (GT 10447 . 10448) (INDENT_BLOCK 10297 . 10339) (NEWLINE 10296 . 10297) (COLON 10295 . 10296) (MINUS 10277 . 10278) (GT 10278 . 10279) (INDENT_BLOCK 9807 . 10218) (NEWLINE 9806 . 9807) (COLON 9805 . 9806) (MINUS 9788 . 9789) (GT 9789 . 9790) (NAME 9771 . 9781) (COLON 9781 . 9782) (INDENT_BLOCK 6961 . 9721) (NEWLINE 6960 . 6961) (COLON 6959 . 6960) (MINUS 6952 . 6953) (GT 6953 . 6954) (BRACK_BLOCK 6931 . 6950) (NAME 6917 . 6925) (COLON 6925 . 6926) (INDENT_BLOCK 3826 . 6889) (NEWLINE 3825 . 3826) (COLON 3824 . 3825) (MINUS 3817 . 3818) (GT 3818 . 3819) (NAME 3782 . 3796) (COLON 3796 . 3797) (INDENT_BLOCK 3290 . 3751) (NEWLINE 3084 . 3085) (COLON 3083 . 3084) (MINUS 3067 . 3068) (GT 3068 . 3069) (NAME 3051 . 3059) (COLON 3059 . 3060) (NAME 3032 . 3044) (COLON 3044 . 3045) (INDENT_BLOCK 2518 . 2989) (NEWLINE 2517 . 2518) (COLON 2516 . 2517) (MINUS 2510 . 2511) (GT 2511 . 2512) (NAME 2493 . 2503) (COLON 2503 . 2504) (INDENT_BLOCK 2416 . 2451) (NEWLINE 2415 . 2416) (COLON 2414 . 2415) (DEF 2353 . 2356) (MINUS 2407 . 2408) (GT 2408 . 2409) (BRACK_BLOCK 2386 . 2405) (NAME 2372 . 2380) (COLON 2380 . 2381) (INDENT_BLOCK 1883 . 2300) (NEWLINE 1882 . 1883) (COLON 1881 . 1882) (MINUS 1875 . 1876) (GT 1876 . 1877) (BRACK_BLOCK 1868 . 1873) (NAME 1845 . 1858) (COLON 1858 . 1859) (NAME 1827 . 1838) (COLON 1838 . 1839) (NAME 1808 . 1820) (COLON 1820 . 1821) (INDENT_BLOCK 1697 . 1757) (NEWLINE 1696 . 1697) (COLON 1695 . 1696) (MINUS 1678 . 1679) (GT 1679 . 1680) (NAME 1661 . 1671) (COLON 1671 . 1672) (INDENT_BLOCK 1513 . 1587) (NEWLINE 1512 . 1513) (COLON 1511 . 1512) (MINUS 1493 . 1494) (GT 1494 . 1495) (INDENT_BLOCK 1397 . 1410) (NEWLINE 1396 . 1397) (COLON 1395 . 1396) (MINUS 1388 . 1389) (GT 1389 . 1390) (BRACK_BLOCK 1367 . 1386) (NAME 1353 . 1361) (COLON 1361 . 1362) (INDENT_BLOCK 1247 . 1325) (NEWLINE 1246 . 1247) (COLON 1245 . 1246) (MINUS 1238 . 1239) (GT 1239 . 1240) (NAME 1210 . 1217) (COLON 1217 . 1218) (INDENT_BLOCK 1103 . 1155) (NEWLINE 1102 . 1103) (COLON 1101 . 1102) (DEF 1076 . 1079) (MINUS 1094 . 1095) (GT 1095 . 1096) (INDENT_BLOCK 1004 . 1037) (NEWLINE 1003 . 1004) (COLON 1002 . 1003) (DEF 941 . 944) (MINUS 995 . 996) (GT 996 . 997) (BRACK_BLOCK 974 . 993) (NAME 960 . 968) (COLON 968 . 969) (NAME 913 . 922) (ASSIGN 922 . 923) (NAME 857 . 873) (COLON 873 . 874) (NAME 830 . 837) (COLON 837 . 838) (NAME 811 . 819) (COLON 819 . 820) (NAME 794 . 801) (COLON 801 . 802) (NAME 770 . 784) (COLON 784 . 785))))
+  :file "!Users!spen!repos!discord!discord_clid!discord_clid!commands!brew!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1ffcd7df3edc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffcd7df3edc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffcd7df3ebc"
+      :major-mode c-mode
+      :tags nil
+      :file "NSFileProviderExtension.h"
+      :pointmax 607
+      :fsize 606
+      :lastmodtime '(24516 49998 0 0)
+      :unmatched-syntax '((punctuation 598 . 599) (symbol 597 . 598) (punctuation 596 . 597) (symbol 573 . 596) (punctuation 572 . 573) (symbol 563 . 572) (punctuation 562 . 563) (symbol 555 . 561) (punctuation 554 . 555))))
+  :file "!Applications!Xcode.app!Contents!Developer!Platforms!iPhoneSimulator.platform!Developer!SDKs!iPhoneSimulator.sdk!System!Library!Frameworks!UIKit.framework!Headers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

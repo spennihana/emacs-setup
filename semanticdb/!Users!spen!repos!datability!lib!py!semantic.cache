@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1feeff1531dc
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1feeff1531dc"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1feeff153200"
+      :major-mode python-mode
+      :tags nil
+      :file "grpc_health_servicer.py"
+      :pointmax 351
+      :fsize 350
+      :lastmodtime '(24570 14074 256855 218000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!datability!lib!py!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

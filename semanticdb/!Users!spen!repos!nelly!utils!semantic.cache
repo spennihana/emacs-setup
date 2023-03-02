@@ -1,0 +1,147 @@
+;; Object semanticdb-project-database-file-1fe457d22ea0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1fe457d22ea0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1fe457d099d8"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" code nil nil [8 15])
+            ("os" include nil nil [16 25])
+            ("raven" include nil nil [27 39])
+            ("raven.contrib.flask" include nil nil [40 93])
+            ("disco.bot.command" include nil nil [95 137])
+            ("disco.types.base" include nil nil [138 172])
+            ("logger" variable nil nil [175 211])
+            ("ErrorReporting" type
+               (:members 
+                  ( ("sentry_client" variable nil (reparse-symbol indented_block_body) [240 260])
+                    ("sentry_client_flask" variable nil (reparse-symbol indented_block_body) [265 291])
+                    ("sentry_log_handler" variable nil (reparse-symbol indented_block_body) [296 321])
+                    ("setup_sentry" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [361 364])
+                            ("dsn" variable nil (reparse-symbol function_parameters) [366 369]))                          )
+                        (reparse-symbol indented_block_body) [327 520])
+                    ("handle_exception" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [563 566]))                          )
+                        (reparse-symbol indented_block_body) [525 694])
+                    ("merge_context" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [734 737])
+                            ("context" variable nil (reparse-symbol function_parameters) [739 746]))                          )
+                        (reparse-symbol indented_block_body) [699 832])
+                    ("clear_context" function
+                       (:decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [872 875]))                          )
+                        (reparse-symbol indented_block_body) [837 954])
+                    ("serialize_event" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("event" variable nil (reparse-symbol function_parameters) [997 1002]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [959 1428]))                  
+                :type "class")
+                nil [214 1428]))          
+      :file "error_reporting.py"
+      :pointmax 1428
+      :fsize 1427
+      :lastmodtime '(24558 44544 849810 481000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1fe457dc8b40"
+      :major-mode python-mode
+      :tags 
+        '( ("gevent" include nil nil [1 14])
+            ("disco.types.message" include nil nil [16 69])
+            ("disco.types.channel" include nil nil [70 109])
+            ("DEFAULT_INTERVAL" variable nil nil [111 131])
+            ("UpdatingMsgGreenlet" type
+               (:documentation "
+    UpdatingMsgGreenlet provides an API for callers to auto-update messages on interval with
+    dynamic content by means of a callable passed in the constructor.
+
+    msg_func needs to be callable which returns the msg content and a bool indicating whether
+    the thing is done. Callers should use a partial if you need to pass state to the msg_func.
+    The msg content return val can return a string for a normal message, or a MessageEmbed object.
+    "
+                :superclasses ("gevent.Greenlet")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("gevent" code nil (reparse-symbol indented_block_body) [730 760])
+                            ("self" variable nil (reparse-symbol indented_block_body) [769 793])
+                            ("self" variable nil (reparse-symbol indented_block_body) [802 826])
+                            ("self" variable nil (reparse-symbol indented_block_body) [835 855])
+                            ("self" variable nil (reparse-symbol indented_block_body) [864 884])
+                            ("self" variable nil (reparse-symbol indented_block_body) [893 913])
+                            ("self" variable nil (reparse-symbol indented_block_body) [922 944]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [664 668])
+                            ("msg_func" variable nil (reparse-symbol function_parameters) [670 678])
+                            ("channel" variable nil (reparse-symbol function_parameters) [680 687])
+                            ("interval" variable nil (reparse-symbol function_parameters) [694 702]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [651 945])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [976 980]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [950 1012])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1049 1053])
+                            ("message" variable nil (reparse-symbol function_parameters) [1055 1062]))                          
+                        :decorators 
+                          ( ("message.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1017 1243])
+                    ("channel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1274 1278]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1248 1310])
+                    ("channel" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1347 1351])
+                            ("channel" variable nil (reparse-symbol function_parameters) [1353 1360]))                          
+                        :decorators 
+                          ( ("channel.setter" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1315 1541])
+                    ("set_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1562 1566])
+                            ("message" variable nil (reparse-symbol function_parameters) [1568 1575])
+                            ("channel" variable nil (reparse-symbol function_parameters) [1577 1584]))                          )
+                        (reparse-symbol indented_block_body) [1546 1678])
+                    ("_run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1692 1696]))                          )
+                        (reparse-symbol indented_block_body) [1683 2395]))                  
+                :type "class")
+                nil [134 2395]))          
+      :file "updating_msg.py"
+      :pointmax 2395
+      :fsize 2394
+      :lastmodtime '(24295 47004 144269 546000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!nelly!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

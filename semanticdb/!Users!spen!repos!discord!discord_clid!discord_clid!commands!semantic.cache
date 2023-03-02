@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1ff80fafcb44
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff80fafcb44"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff80e77da94"
+      :major-mode python-mode
+      :tags 
+        '( ("json" include nil nil [1 12])
+            ("pathlib" include nil nil [13 37])
+            ("click" include nil nil [39 51])
+            ("discord_clid" include nil nil [53 83])
+            ("discord_clid.context" include nil nil [84 133])
+            ("BUILD_TARGETS" variable nil nil [135 423])
+            ("DEFAULT_BUILD_TARGET" variable nil nil [425 480])
+            ("" code nil nil [495 497])
+            ("" code nil nil [583 585])
+            ("" code nil nil [974 976])
+            ("" code nil nil [1006 1146])
+            ("" code nil nil [1162 1257])
+            ("" code nil nil [1273 1348])
+            ("" code nil nil [2310 2312])
+            ("" code nil nil [2344 2419])
+            ("" code nil nil [2604 2606]))          
+      :file "android.py"
+      :pointmax 3199
+      :fsize 3198
+      :lastmodtime '(24250 56501 203681 626000)
+      :unmatched-syntax '((INDENT_BLOCK 2691 . 3199) (COLON 2689 . 2690) (AT 2607 . 2608) (MINUS 2682 . 2683) (GT 2683 . 2684) (NAME 2653 . 2662) (COLON 2662 . 2663) (INDENT_BLOCK 2486 . 2586) (COLON 2484 . 2485) (DEF 2420 . 2423) (MINUS 2477 . 2478) (GT 2478 . 2479) (NAME 2458 . 2470) (COLON 2470 . 2471) (NAME 2429 . 2438) (COLON 2438 . 2439) (INDENT_BLOCK 1444 . 2292) (COLON 1442 . 1443) (DEF 1349 . 1352) (MINUS 1435 . 1436) (GT 1436 . 1437) (NAME 1421 . 1428) (COLON 1428 . 1429) (NAME 1402 . 1414) (COLON 1414 . 1415) (NAME 1387 . 1395) (COLON 1395 . 1396) (NAME 1358 . 1367) (COLON 1367 . 1368) (INDENT_BLOCK 661 . 956) (COLON 659 . 660) (AT 586 . 587) (MINUS 652 . 653) (GT 653 . 654) (NAME 623 . 632) (COLON 632 . 633) (INDENT_BLOCK 521 . 565) (COLON 519 . 520) (DEF 498 . 501) (MINUS 512 . 513) (GT 513 . 514))))
+  :file "!Users!spen!repos!discord!discord_clid!discord_clid!commands!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

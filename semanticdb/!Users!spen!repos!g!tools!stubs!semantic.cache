@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file-1feeb8069698
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1feeb8069698"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1feeb80696cc"
+      :major-mode python-mode
+      :tags 
+        '( ("click" include nil nil [1 13])
+            ("click" code nil nil [21 34]))          
+      :file "black.pyi"
+      :pointmax 35
+      :fsize 34
+      :lastmodtime '(24581 65449 828143 26000)
+      :unmatched-syntax '((NAME 15 . 19) (COLON 19 . 20)))
+    (semanticdb-table "semanticdb-table-1feeb78f1a28"
+      :major-mode python-mode
+      :tags nil
+      :file "click_default_group.pyi"
+      :pointmax 767
+      :fsize 766
+      :lastmodtime '(24581 65449 788567 661000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!g!tools!stubs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

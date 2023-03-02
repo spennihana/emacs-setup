@@ -1,0 +1,104 @@
+;; Object semanticdb-project-database-file-1feeff2d2bc0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1feeff2d2bc0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1feeff0e8080"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("gevent" include nil nil [41 54])
+            ("uuid" include nil nil [55 66])
+            ("os" include nil nil [67 76])
+            ("time" include nil nil [77 88])
+            ("logging" include nil nil [89 103])
+            ("lib.py.snowflake_utils" include nil nil [104 140])
+            ("lib.py" include nil nil [141 164])
+            ("lib.py.logging" include nil nil [165 213])
+            ("InvalidSystemClock" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [257 261]))                  
+                :type "class")
+                nil [216 262])
+            ("InvalidWorkerId" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [302 306]))                  
+                :type "class")
+                nil [264 307])
+            ("InvalidDataCenterId" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [351 355]))                  
+                :type "class")
+                nil [309 356])
+            ("ExceededMaximumIdWorkers" type
+               (:superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [405 409]))                  
+                :type "class")
+                nil [358 410])
+            ("_time_gen" function nil nil [412 464])
+            ("_till_next_millis" function (:arguments 
+              ( ("last_timestamp" variable nil (reparse-symbol function_parameters) [488 502]))              ) nil [466 627])
+            ("LOG" variable nil nil [629 665])
+            ("enable_pretty_logging" code nil nil [666 692])
+            ("IdWorker" type
+               (:documentation "Distributed sequential id generation ported from Twitter's Snowflake.
+    https://github.com/twitter/snowflake"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [900 926])
+                            ("self" variable nil (reparse-symbol indented_block_body) [935 971])
+                            ("self" variable nil (reparse-symbol indented_block_body) [981 1003])
+                            ("self" code nil (reparse-symbol indented_block_body) [1012 1041])
+                            ("if" code nil (reparse-symbol indented_block_body) [1088 1249])
+                            ("if" code nil (reparse-symbol indented_block_body) [1258 1445])
+                            ("LOG" code nil (reparse-symbol indented_block_body) [1454 1780]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [858 862])
+                            ("worker_id" variable nil (reparse-symbol function_parameters) [864 873])
+                            ("data_center_id" variable nil (reparse-symbol function_parameters) [875 889]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [845 1781])
+                    ("next_id" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1798 1802]))                          )
+                        (reparse-symbol indented_block_body) [1786 2589]))                  
+                :type "class")
+                nil [695 2589])
+            ("_worker" variable nil nil [2591 2605])
+            ("start" function (:arguments 
+              ( ("worker_id" variable nil (reparse-symbol function_parameters) [2618 2627])
+                ("data_center_id" variable nil (reparse-symbol function_parameters) [2631 2645]))              ) nil [2608 2719])
+            ("start_with_etcd" function (:arguments 
+              ( ("namespace" variable nil (reparse-symbol function_parameters) [2741 2750])
+                ("ttl" variable nil (reparse-symbol function_parameters) [2762 2765]))              ) nil [2721 4301])
+            ("stop" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [4312 4316]))                  )
+                nil [4303 4361])
+            ("next_id" function nil nil [4363 4426])
+            ("get_worker_id" function nil nil [4428 4497]))          
+      :file "__init__.py"
+      :pointmax 4497
+      :fsize 4496
+      :lastmodtime '(24570 14074 259406 145000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1feeff1bdd2c"
+      :major-mode python-mode
+      :tags nil
+      :file "snowflake_service.py"
+      :pointmax 1269
+      :fsize 1268
+      :lastmodtime '(24570 14074 259705 815000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!datability!services!snowflake!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

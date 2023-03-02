@@ -1,0 +1,187 @@
+;; Object semanticdb-project-database-file-1ff22db79408
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff22db79408"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff22db79430"
+      :file "constants.py"
+      :fsize 120259
+      :lastmodtime '(24382 42446 586754 410000))
+    (semanticdb-table "semanticdb-table-1ff22e058700"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("logging" include nil nil [41 55])
+            ("os" include nil nil [56 65])
+            ("sys" include nil nil [66 76])
+            ("six" include nil nil [78 88])
+            ("sys" code nil nil [90 173])
+            ("grpc.experimental" include nil nil [189 240])
+            ("if" code nil nil [242 366])
+            ("grpc_gevent" code nil nil [368 393])
+            ("gevent" include nil nil [535 577])
+            ("gevent" include nil nil [578 609])
+            ("gevent_config" variable nil nil [611 652])
+            ("discord_common" include nil nil [669 709])
+            ("ddtrace_utils" code nil nil [711 738])
+            ("if" code nil nil [753 868])
+            ("importlib" include nil nil [870 886])
+            ("six.moves.http_client" include nil nil [888 916])
+            ("werkzeug.exceptions" include nil nil [917 943])
+            ("flask" include nil nil [944 982])
+            ("flask.sessions" include nil nil [983 1026])
+            ("flask_login" include nil nil [1027 1077])
+            ("werkzeug.exceptions" include nil nil [1078 1123])
+            ("werkzeug.utils" include nil nil [1124 1163])
+            ("discord_common" include nil nil [1165 1232])
+            ("discord_common.core.logging" include nil nil [1233 1312])
+            ("discord_common.flask_discord" include nil nil [1313 1366])
+            ("discord.constants" include nil nil [1368 1462])
+            ("" code nil nil [1487 1935])
+            ("discord.lib.analytics" include nil nil [1936 1982])
+            ("discord.lib.analytics.schema" include nil nil [1983 2050])
+            ("discord.lib.billing" include nil nil [2051 2118])
+            ("discord.lib.converters" include nil nil [2119 2167])
+            ("discord.lib.error_utils" include nil nil [2168 2250])
+            ("discord.lib.flask_login_anonymous" include nil nil [2251 2310])
+            ("discord.lib.json_utils" include nil nil [2311 2376])
+            ("" code nil nil [2422 2811])
+            ("discord.lib.rate_limit.headers" include nil nil [2812 2887])
+            ("discord.lib.storage" include nil nil [2888 2983])
+            ("discord.models.guest_user" include nil nil [2984 3051])
+            ("discord.models.guild" include nil nil [3052 3090])
+            ("discord.models.oauth2" include nil nil [3099 3144])
+            ("discord.models.read_state" include nil nil [3145 3192])
+            ("discord.models.user" include nil nil [3238 3274])
+            ("enable_pretty_logging" code nil nil [3276 3299])
+            ("logging" code nil nil [3487 3563])
+            ("DictSessionInterface" type
+               (:superclasses ("SessionInterface")
+                :members 
+                  ( ("open_session" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3633 3637])
+                            ("app" variable nil (reparse-symbol function_parameters) [3639 3642])
+                            ("request" variable nil (reparse-symbol function_parameters) [3644 3651]))                          )
+                        (reparse-symbol indented_block_body) [3616 3672])
+                    ("save_session" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3694 3698])
+                            ("app" variable nil (reparse-symbol function_parameters) [3700 3703])
+                            ("session" variable nil (reparse-symbol function_parameters) [3705 3712])
+                            ("response" variable nil (reparse-symbol function_parameters) [3714 3722]))                          )
+                        (reparse-symbol indented_block_body) [3677 3738]))                  
+                :type "class")
+                nil [3566 3738])
+            ("app" variable nil nil [3740 3768])
+            ("if" code nil nil [3770 3991])
+            ("ddtrace_utils" code nil nil [3993 4048])
+            ("app" code nil nil [4050 4138])
+            ("app" code nil nil [4139 4231])
+            ("app" code nil nil [4232 4330])
+            ("app" variable nil nil [4368 4413])
+            ("app" variable nil nil [4414 4474])
+            ("app" variable nil nil [4475 4542])
+            ("app" variable nil nil [4543 4623])
+            ("app" variable nil nil [4624 4706])
+            ("if" code nil nil [4744 4812])
+            ("if" code nil nil [4813 4973])
+            ("app" variable nil nil [4974 5016])
+            ("app" variable nil nil [5017 5063])
+            ("app" variable nil nil [5064 5119])
+            ("app" variable nil nil [5120 5166])
+            ("celery" variable nil nil [5168 5196])
+            ("flask_exceptions" code nil nil [5198 5228])
+            ("flask_celery" code nil nil [5229 5255])
+            ("instruments" code nil nil [5256 5289])
+            ("dnsbl" code nil nil [5290 5309])
+            ("feature_flags" code nil nil [5310 5337])
+            ("policy_banned_keywords" code nil nil [5338 5374])
+            ("disabled_guild_operations" code nil nil [5375 5414])
+            ("flask_redis" code nil nil [5415 5440])
+            ("flask_cassandra" code nil nil [5441 5470])
+            ("flask_postgres" code nil nil [5471 5499])
+            ("analytics" code nil nil [5500 5523])
+            ("rate_limit" code nil nil [5524 5548])
+            ("regions" code nil nil [5549 5570])
+            ("flask_twilio" code nil nil [5571 5597])
+            ("flask_content_cop" code nil nil [5598 5629])
+            ("flask_discord_ai" code nil nil [5630 5660])
+            ("payment_gateways" code nil nil [5661 5691])
+            ("circuit_breakers" code nil nil [5692 5722])
+            ("abuse_utils" code nil nil [5723 5748])
+            ("flask_oauth2" code nil nil [5749 5775])
+            ("rpc_client" code nil nil [5776 5800])
+            ("flask_user_identity_verification" code nil nil [5801 5847])
+            ("flask_zendesk" code nil nil [5848 5875])
+            ("algolia" code nil nil [5876 5897])
+            ("guild_discovery" code nil nil [5898 5927])
+            ("flask_chargehound" code nil nil [5928 5959])
+            ("if" code nil nil [5961 6295])
+            ("if" code nil nil [6296 6532])
+            ("app" variable nil nil [6534 6568])
+            ("app" variable nil nil [6569 6629])
+            ("app" variable nil nil [6630 6674])
+            ("set_cors_and_hsts_headers" function
+               (:decorators 
+                  ( ("app.after_request" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("response" variable nil (reparse-symbol function_parameters) [6740 6748]))                  )
+                nil [6691 8324])
+            ("check_api_version" function (:decorators 
+              ( ("app.before_request" function (:type "decorator") nil nil))              ) nil [8326 8981])
+            ("failed_requests_that_completed_metric" function (:decorators 
+              ( ("app.before_request" function (:type "decorator") nil nil))              ) nil [8983 9296])
+            ("login_manager" variable nil nil [9314 9376])
+            ("login_manager" variable nil nil [9377 9421])
+            ("normal_global_rate_limit" variable nil nil [9424 9590])
+            ("high_global_rate_limit" variable nil nil [9591 9753])
+            ("global_rate_limit" function (:decorators 
+              ( ("app.before_request" function (:type "decorator") nil nil))              ) nil [9776 10718])
+            ("register_error_handler" function (:arguments 
+              ( ("status_code" variable nil (reparse-symbol function_parameters) [10747 10758]))              ) nil [10720 11965])
+            ("for" code nil nil [12004 12113])
+            ("" code nil nil [12132 12155])
+            ("skema_validation_error" function (:arguments 
+              ( ("exc" variable nil (reparse-symbol function_parameters) [12183 12186])
+                ("api_version" variable nil (reparse-symbol function_parameters) [12188 12199]))              ) nil [12156 13178])
+            ("" code nil nil [13197 13225])
+            ("event_schema_validation_error" function
+               (:documentation "Propagates event schema validation errors to client while in debug mode."
+                :arguments 
+                  ( ("exc" variable nil (reparse-symbol function_parameters) [13260 13263]))                  )
+                nil [13226 13470])
+            ("unauthorized" function (:decorators 
+              ( ("login_manager.unauthorized_handler" function (:type "decorator") nil nil))              ) nil [13472 13574])
+            ("load_user_from_request" function
+               (:decorators 
+                  ( ("login_manager.request_loader" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [13633 13640]))                  )
+                nil [13576 15475])
+            ("load_user" function
+               (:decorators 
+                  ( ("login_manager.user_loader" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("user_id" variable nil (reparse-symbol function_parameters) [15518 15525]))                  )
+                nil [15477 15631])
+            ("load_modules" function (:arguments 
+              ( ("view_modules" variable nil (reparse-symbol function_parameters) [15650 15662]))              ) nil [15633 15870])
+            ("health_route" variable nil nil [15917 15942])
+            ("if" code nil nil [15957 16229])
+            ("if" code nil nil [16230 16457])
+            ("" code nil nil [16493 16507])
+            ("health" function nil nil [16508 16674])
+            ("if" code nil nil [16796 16879])
+            ("gevent_liveliness_watcher" function nil nil [16881 17052])
+            ("gevent_liveliness_monitor" variable nil nil [17054 17114]))          
+      :file "__init__.py"
+      :pointmax 17115
+      :fsize 17114
+      :lastmodtime '(24373 42588 388435 569000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!discord!discord_api!discord!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

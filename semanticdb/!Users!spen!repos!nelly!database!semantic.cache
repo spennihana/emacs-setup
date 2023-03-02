@@ -1,0 +1,46 @@
+;; Object semanticdb-project-database-file-1ffb26130b04
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffb26130b04"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffb26130b2c"
+      :major-mode python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("psycogreen.gevent" include nil nil [17 41])
+            ("playhouse.shortcuts" include nil nil [42 95])
+            ("psycogreen" code nil nil [97 130])
+            ("playhouse.postgres_ext" include nil nil [146 202])
+            ("playhouse" include nil nil [203 231])
+            ("peewee" include nil nil [232 245])
+            ("yaml" include nil nil [246 257])
+            ("proxy" variable nil nil [259 281])
+            ("ReconnectingPostgresqlExtDatabase" type
+               (:superclasses ("RetryOperationalError" "PostgresqlExtDatabase")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [455 459]))                  
+                :type "class")
+                nil [364 460])
+            ("init_db_from_config_file" function (:arguments 
+              ( ("config_file" variable nil (reparse-symbol function_parameters) [491 502]))              ) nil [462 642])
+            ("init_db" function (:arguments 
+              ( ("config" variable nil (reparse-symbol function_parameters) [656 662])
+                ("debug" variable nil (reparse-symbol function_parameters) [664 669]))              ) nil [644 1224])
+            ("BaseModel" type
+               (:superclasses ("peewee.Model")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("database" variable nil (reparse-symbol indented_block_body) [1281 1297]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1261 1298]))                  
+                :type "class")
+                nil [1226 1298]))          
+      :file "__init__.py"
+      :pointmax 1298
+      :fsize 1297
+      :lastmodtime '(24295 47004 127473 611000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!nelly!database!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

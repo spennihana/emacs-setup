@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1feefeb8fcd4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1feefeb8fcd4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1feefedd3100"
+      :major-mode python-mode
+      :tags nil
+      :file "dict.py"
+      :pointmax 4046
+      :fsize 4045
+      :lastmodtime '(24570 14074 254786 777000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1feefeb86434"
+      :major-mode python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 12396
+      :fsize 12395
+      :lastmodtime '(24570 14074 254583 30000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!datability!lib!py!etcd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

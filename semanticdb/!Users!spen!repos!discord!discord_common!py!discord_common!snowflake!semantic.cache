@@ -1,0 +1,144 @@
+;; Object semanticdb-project-database-file-1ff1e3d4f15c
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff1e3d4f15c"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff1e3d627ec"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("typing" include nil nil [41 74])
+            ("discord_common.drpc" include nil nil [76 142])
+            ("GENERATE" variable nil nil [144 180])
+            ("_drpc_client" variable nil nil [183 202])
+            ("init_rpc_client" function (:arguments 
+              ( ("client_class" variable nil (reparse-symbol function_parameters) [251 263]))              ) nil [231 416])
+            ("generate_snowflakes" function (:arguments 
+              ( ("n" variable nil (reparse-symbol function_parameters) [442 443]))              ) nil [418 592]))          
+      :file "rpc_client.py"
+      :pointmax 592
+      :fsize 591
+      :lastmodtime '(24250 56501 676889 699000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff1e3dde1d8"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("math" include nil nil [41 52])
+            ("time" include nil nil [53 64])
+            ("datetime" include nil nil [65 105])
+            ("typing" include nil nil [106 142])
+            ("gevent" include nil nil [144 157])
+            ("pytz" include nil nil [158 169])
+            ("gevent.lock" include nil nil [170 199])
+            ("discord_common" include nil nil [201 243])
+            ("discord_common.ddtrace_utils" include nil nil [244 295])
+            ("discord_common.instruments" include nil nil [296 342])
+            ("init_rpc_client" include nil nil [361 404])
+            ("generate_snowflakes" include nil nil [361 404])
+            ("DISCORD_EPOCH" variable nil nil [406 435])
+            ("POSIX_EPOCH" variable nil nil [436 487])
+            ("BATCH_SIZE" variable nil nil [488 503])
+            ("MAX_RETRIES" variable nil nil [504 519])
+            ("MAX_AGE" variable nil nil [520 557])
+            ("snowflake_pool" variable nil nil [559 578])
+            ("snowflake_pool_age" variable nil nil [598 636])
+            ("snowflake_pool_lock" variable nil nil [637 666])
+            ("SnowflakeAbortError" type
+               (:documentation "Thrown when a request for a Snowflake is aborted."
+                :superclasses ("Exception")
+                :type "class")
+                nil [669 767])
+            ("SnowflakePoolError" type
+               (:documentation "Thrown when Snowflakes could not be generated."
+                :superclasses ("Exception")
+                :type "class")
+                nil [769 863])
+            ("_generate_snowflakes_non_speculatively" function
+               (:documentation "
+    Generate a batch of Snowflakes from Snowflake service.
+
+    :rtype: list[long]
+    "
+                :arguments 
+                  ( ("batch_size" variable nil (reparse-symbol function_parameters) [908 918]))                  )
+                nil [865 1738])
+            ("" code nil nil [1751 1813])
+            ("_generate_snowflakes" function
+               (:documentation "Generates a list of snowflakes, firing off multiple speculative requests to
+    the snowflake service at once, and using the result of the request that finishes
+    first.
+
+    The thought being if one node is unhealthy, or slow, we'll have to requests race,
+    allowing us to get the result from a healthy node faster, without having the
+    slow node lag behind.
+    "
+                :arguments 
+                  ( ("batch_size" variable nil (reparse-symbol function_parameters) [1839 1849])
+                    ("speculative_requests" variable nil (reparse-symbol function_parameters) [1862 1882]))                  )
+                nil [1814 3202])
+            ("_should_generate_snowflakes" function (:documentation "
+    Determine if a new batch of Snowflakes should be generated.
+    Snowflake age is important and they should be regenerated if they are considerd stale.
+
+    :rtype: bool
+    ") nil [3204 3510])
+            ("init" function (:arguments 
+              ( ("client_class" variable nil (reparse-symbol function_parameters) [3521 3533]))              ) nil [3512 3610])
+            ("next_id" function (:documentation "
+    Return the next Snowflake from the pool.
+
+    :rtype: long
+    ") nil [3612 4224])
+            ("fresh_id" function (:documentation "
+    Return a fresh Snowflake from the server.
+
+    :rtype: long
+    ") nil [4226 4371])
+            ("to_datetime" function
+               (:documentation "
+    Extract the timestamp from a Snowflake and return a UTC datetime.
+
+    :type snowflake: str|long
+    :rtype: datetime
+    "
+                :arguments 
+                  ( ("snowflake" variable nil (reparse-symbol function_parameters) [4389 4398]))                  )
+                nil [4373 4608])
+            ("from_datetime" function
+               (:documentation "
+    Converts a timezone aware datetime to a Snowflake.
+
+    :type dt: datetime
+    :return:
+    "
+                :arguments 
+                  ( ("dt" variable nil (reparse-symbol function_parameters) [4889 4891]))                  )
+                nil [4871 5205])
+            ("from_timestamp" function
+               (:documentation "
+    Convert UNIX timestamp (seconds) to a Snowflake.
+
+    :type timestamp: int
+    :rtype: long
+    "
+                :arguments 
+                  ( ("timestamp" variable nil (reparse-symbol function_parameters) [5226 5235]))                  )
+                nil [5207 5407])
+            ("snowflake_age" function
+               (:documentation "
+    Returns a timedelta for the age of the snowflake
+    :type snowflake: long|str
+    :rtype: timedelta
+    "
+                :arguments 
+                  ( ("snowflake" variable nil (reparse-symbol function_parameters) [5427 5436]))                  )
+                nil [5409 5628]))          
+      :file "__init__.py"
+      :pointmax 5628
+      :fsize 5627
+      :lastmodtime '(24353 384 241649 634000)
+      :unmatched-syntax '((INDENT_BLOCK 4665 . 4869) (COLON 4663 . 4664) (DEF 4610 . 4613) (MINUS 4655 . 4656) (GT 4656 . 4657) (BRACK_BLOCK 4643 . 4653) (NAME 4627 . 4636) (COLON 4636 . 4637) (FROM 344 . 348) (PERIOD 349 . 350))))
+  :file "!Users!spen!repos!discord!discord_common!py!discord_common!snowflake!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

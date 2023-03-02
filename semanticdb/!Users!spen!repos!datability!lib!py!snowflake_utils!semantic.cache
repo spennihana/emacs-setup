@@ -1,0 +1,73 @@
+;; Object semanticdb-project-database-file-1feefecd1a84
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1feefecd1a84"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1feefedf6d08"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("datetime" include nil nil [40 80])
+            ("pytz" include nil nil [81 92])
+            ("DATABILITY_EPOCH" variable nil nil [95 132])
+            ("WORKER_ID_BITS" variable nil nil [133 156])
+            ("DATA_CENTER_ID_BITS" variable nil nil [157 185])
+            ("MAX_WORKER_ID" code nil nil [186 239])
+            ("MAX_DATA_CENTER_ID" code nil nil [240 303])
+            ("SEQUENCE_BITS" variable nil nil [304 327])
+            ("WORKER_ID_SHIFT" variable nil nil [329 360])
+            ("DATA_CENTER_ID_SHIFT" code nil nil [361 414])
+            ("TIMESTAMP_LEFT_SHIFT" code nil nil [415 490])
+            ("SEQUENCE_MASK" code nil nil [491 543])
+            ("POSIX_EPOCH" variable nil nil [545 596])
+            ("BATCH_SIZE" variable nil nil [597 612])
+            ("MAX_RETRIES" variable nil nil [613 628])
+            ("MAX_AGE" variable nil nil [629 666])
+            ("to_datetime" function
+               (:documentation "
+    Extract the timestamp from a Snowflake and return a UTC datetime.
+
+    :type snowflake: str|long
+    :rtype: datetime
+    "
+                :arguments 
+                  ( ("snowflake" variable nil (reparse-symbol function_parameters) [685 694]))                  )
+                nil [669 904])
+            ("to_timestamp" function
+               (:documentation "
+    Extract the timestamp from a Snowflake and return a unix epoch timestamp.
+
+    :type snowflake: str|long
+    :rtype: float
+    "
+                :arguments 
+                  ( ("snowflake" variable nil (reparse-symbol function_parameters) [923 932]))                  )
+                nil [906 1142])
+            ("from_datetime" function
+               (:documentation "
+    Converts a timezone aware datetime to a Snowflake.
+
+    :type dt: datetime
+    :return:
+    "
+                :arguments 
+                  ( ("dt" variable nil (reparse-symbol function_parameters) [1162 1164]))                  )
+                nil [1144 1483])
+            ("from_timestamp" function
+               (:documentation "
+    Convert UNIX timestamp (seconds) to a Snowflake.
+
+    :type timestamp: int
+    :rtype: long
+    "
+                :arguments 
+                  ( ("timestamp" variable nil (reparse-symbol function_parameters) [1504 1513]))                  )
+                nil [1485 1688]))          
+      :file "__init__.py"
+      :pointmax 1688
+      :fsize 1687
+      :lastmodtime '(24570 14074 258048 357000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!datability!lib!py!snowflake_utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

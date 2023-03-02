@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file-1ff3e26ad490
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff3e26ad490"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff3e26c41dc"
+      :major-mode js-mode
+      :tags nil
+      :file "package.json"
+      :pointmax 683
+      :fsize 682
+      :lastmodtime '(24690 13564 968218 332000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff3e267fedc"
+      :major-mode js-mode
+      :tags nil
+      :file "metro.config.js"
+      :pointmax 300
+      :fsize 299
+      :lastmodtime '(24690 13548 282299 518000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!AwesomeProject!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

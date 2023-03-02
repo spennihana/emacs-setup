@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file-1ff1c8e0b944
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff1c8e0b944"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff1c8e0b968"
+      :major-mode js-mode
+      :tags nil
+      :file "Folly.podspec.json"
+      :pointmax 2405
+      :fsize 2404
+      :lastmodtime '(24581 666 46333 92000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff1c9803010"
+      :major-mode js-mode
+      :tags nil
+      :file "glog.podspec.json"
+      :pointmax 2920
+      :fsize 2919
+      :lastmodtime '(24581 666 45184 582000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff1c8ec6be0"
+      :major-mode js-mode
+      :tags nil
+      :file "react-native-get-random-values.podspec.json"
+      :pointmax 470
+      :fsize 469
+      :lastmodtime '(24581 666 45622 971000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!g!third_party!xcode!generated_specs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

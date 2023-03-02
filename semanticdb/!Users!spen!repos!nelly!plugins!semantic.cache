@@ -1,0 +1,454 @@
+;; Object semanticdb-project-database-file-1ffe51d3f104
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffe51d3f104"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffe51d353ec"
+      :major-mode python-mode
+      :tags 
+        '( ("re" include nil nil [1 10])
+            ("requests" include nil nil [11 26])
+            ("collections" include nil nil [28 63])
+            ("disco.bot.command" include nil nil [65 107])
+            ("plugins" include nil nil [109 153])
+            ("database" include nil nil [154 182])
+            ("utils.account" include nil nil [183 203])
+            ("utils.discord" include nil nil [204 248])
+            ("database.models.account" include nil nil [250 293])
+            ("AsanaAPIError" type
+               (:documentation "Error during a request to the Asana API"
+                :superclasses ("Exception")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [424 444])
+                            ("self" variable nil (reparse-symbol indented_block_body) [453 467]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [396 400])
+                            ("status" variable nil (reparse-symbol function_parameters) [402 408])
+                            ("msg" variable nil (reparse-symbol function_parameters) [410 413]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [383 468])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [485 489]))                          )
+                        (reparse-symbol indented_block_body) [473 547]))                  
+                :type "class")
+                nil [296 547])
+            ("AsanaAPIClient" type
+               (:superclasses ("object")
+                :members 
+                  ( ("API_URL" variable nil (reparse-symbol indented_block_body) [583 624])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [676 694])
+                            ("self" variable nil (reparse-symbol indented_block_body) [703 729]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [643 647])
+                            ("token" variable nil (reparse-symbol function_parameters) [649 654])
+                            ("workspace" variable nil (reparse-symbol function_parameters) [656 665]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [630 730])
+                    ("headers" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [761 765]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [735 833])
+                    ("create_task" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [854 858])
+                            ("data" variable nil (reparse-symbol function_parameters) [860 864]))                          )
+                        (reparse-symbol indented_block_body) [838 926])
+                    ("get_workspace_users" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [955 959]))                          )
+                        (reparse-symbol indented_block_body) [931 1029])
+                    ("get_user" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1047 1051])
+                            ("email_address" variable nil (reparse-symbol function_parameters) [1053 1066]))                          )
+                        (reparse-symbol indented_block_body) [1034 1254])
+                    ("get_project_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1280 1284])
+                            ("project_id" variable nil (reparse-symbol function_parameters) [1286 1296]))                          )
+                        (reparse-symbol indented_block_body) [1259 1504])
+                    ("add_tag_to_task" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1529 1533])
+                            ("task_id" variable nil (reparse-symbol function_parameters) [1535 1542])
+                            ("tag_id" variable nil (reparse-symbol function_parameters) [1544 1550]))                          )
+                        (reparse-symbol indented_block_body) [1509 1649])
+                    ("create_tag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1669 1673])
+                            ("tag_name" variable nil (reparse-symbol function_parameters) [1675 1683]))                          )
+                        (reparse-symbol indented_block_body) [1654 1787])
+                    ("get_all_tags" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1809 1813]))                          )
+                        (reparse-symbol indented_block_body) [1792 1860])
+                    ("get_tag" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1877 1881])
+                            ("tag_name" variable nil (reparse-symbol function_parameters) [1883 1891]))                          )
+                        (reparse-symbol indented_block_body) [1865 2043])
+                    ("_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2061 2065])
+                            ("method" variable nil (reparse-symbol function_parameters) [2067 2073])
+                            ("endpoint" variable nil (reparse-symbol function_parameters) [2075 2083])
+                            ("params" variable nil (reparse-symbol function_parameters) [2085 2091]))                          )
+                        (reparse-symbol indented_block_body) [2048 2709]))                  
+                :type "class")
+                nil [549 2709])
+            ("AsanaPluginConfig" type
+               (:superclasses ("NellyConfig")
+                :members 
+                  ( ("access_token" variable nil (reparse-symbol indented_block_body) [2753 2772])
+                    ("discord_workspace" variable nil (reparse-symbol indented_block_body) [2777 2801])
+                    ("nelly_tag_id" variable nil (reparse-symbol indented_block_body) [2806 2825]))                  
+                :type "class")
+                nil [2711 2826])
+            ("" code nil nil [2852 2871])
+            ("AsanaPlugin" type
+               (:superclasses ("NellyPlugin")
+                :members 
+                  ( ("APP_URL" variable nil (reparse-symbol indented_block_body) [2908 2944])
+                    ("NELLY_TAG" variable nil (reparse-symbol indented_block_body) [2949 2982])
+                    ("RE_MENTION_USER_ID" variable nil (reparse-symbol indented_block_body) [2987 3023])
+                    ("load" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3038 3042])
+                            ("ctx" variable nil (reparse-symbol function_parameters) [3044 3047]))                          )
+                        (reparse-symbol indented_block_body) [3029 3238])
+                    ("" code nil (reparse-symbol indented_block_body) [3263 3272])
+                    ("asana" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3287 3291])
+                            ("event" variable nil (reparse-symbol function_parameters) [3293 3298]))                          
+                        :documentation "Shows the command list for the asana command group")
+                        (reparse-symbol indented_block_body) [3277 3400])
+                    ("" code nil (reparse-symbol indented_block_body) [3425 3461])
+                    ("" code nil (reparse-symbol indented_block_body) [3491 3551])
+                    ("on_link" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3568 3572])
+                            ("event" variable nil (reparse-symbol function_parameters) [3574 3579])
+                            ("args" variable nil (reparse-symbol function_parameters) [3581 3585]))                          
+                        :documentation "Link your discord email account - leave empty to show currently linked account")
+                        (reparse-symbol indented_block_body) [3556 4439])
+                    ("" code nil (reparse-symbol indented_block_body) [4464 4489])
+                    ("on_unlink" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4508 4512])
+                            ("event" variable nil (reparse-symbol function_parameters) [4514 4519]))                          
+                        :documentation "Unlink your discord email account")
+                        (reparse-symbol indented_block_body) [4494 4819])
+                    ("" code nil (reparse-symbol indented_block_body) [4844 4885])
+                    ("" code nil (reparse-symbol indented_block_body) [4915 5034])
+                    ("on_filetask" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5055 5059])
+                            ("event" variable nil (reparse-symbol function_parameters) [5061 5066])
+                            ("args" variable nil (reparse-symbol function_parameters) [5068 5072]))                          
+                        :documentation "Files a task with the given title to your currently set Inbox")
+                        (reparse-symbol indented_block_body) [5039 9155])
+                    ("" code nil (reparse-symbol indented_block_body) [9180 9221])
+                    ("" code nil (reparse-symbol indented_block_body) [9251 9330])
+                    ("on_setinbox" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9351 9355])
+                            ("event" variable nil (reparse-symbol function_parameters) [9357 9362])
+                            ("args" variable nil (reparse-symbol function_parameters) [9364 9368]))                          
+                        :documentation "Sets your `!asana file-task` Inbox to the Project id")
+                        (reparse-symbol indented_block_body) [9335 10188])
+                    ("" code nil (reparse-symbol indented_block_body) [10213 10241])
+                    ("on_getinbox" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10262 10266])
+                            ("event" variable nil (reparse-symbol function_parameters) [10268 10273]))                          
+                        :documentation "Prints the Project currently set as your `!asana file-task` Inbox")
+                        (reparse-symbol indented_block_body) [10246 11005]))                  
+                :type "class")
+                nil [2872 11005]))          
+      :file "asana.py"
+      :pointmax 11005
+      :fsize 11004
+      :lastmodtime '(24295 47004 130265 128000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe51d3540c"
+      :major-mode python-mode
+      :tags nil
+      :file "bathroom.py"
+      :pointmax 1666
+      :fsize 1665
+      :lastmodtime '(24295 47004 130462 431000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe51d3f084"
+      :major-mode python-mode
+      :tags nil
+      :file "network.py"
+      :pointmax 1747
+      :fsize 1746
+      :lastmodtime '(24295 47004 137632 962000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe51d3f0a4"
+      :major-mode python-mode
+      :tags nil
+      :file "snowflake.py"
+      :pointmax 2926
+      :fsize 2925
+      :lastmodtime '(24295 47004 138778 576000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe51d3f0c4"
+      :major-mode python-mode
+      :tags nil
+      :file "twilio.py"
+      :pointmax 6346
+      :fsize 6345
+      :lastmodtime '(24295 47004 139631 867000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe51d3f0e4"
+      :major-mode python-mode
+      :tags 
+        '( ("urllib" include nil nil [1 14])
+            ("json" include nil nil [15 26])
+            ("datetime" include nil nil [27 67])
+            ("requests" include nil nil [69 84])
+            ("pytz" include nil nil [85 96])
+            ("disco.types.message" include nil nil [97 141])
+            ("database" include nil nil [143 171])
+            ("plugins" include nil nil [172 216])
+            ("ZDPluginConfig" type
+               (:superclasses ("NellyConfig")
+                :members 
+                  ( ("token" variable nil (reparse-symbol indented_block_body) [258 270])
+                    ("report_times" variable nil (reparse-symbol indented_block_body) [299 533])
+                    ("tns_channel" variable nil (reparse-symbol indented_block_body) [539 571])
+                    ("tns_numbers_channel" variable nil (reparse-symbol indented_block_body) [594 634])
+                    ("the_judiciary" variable nil (reparse-symbol indented_block_body) [655 2028]))                  
+                :type "class")
+                nil [219 2029])
+            ("" code nil nil [2055 2071])
+            ("ZDPlugin" type
+               (:superclasses ("NellyPlugin")
+                :members 
+                  ( ("load" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2114 2118])
+                            ("ctx" variable nil (reparse-symbol function_parameters) [2120 2123]))                          )
+                        (reparse-symbol indented_block_body) [2105 2248])
+                    ("wait_for_state" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2272 2276]))                          )
+                        (reparse-symbol indented_block_body) [2253 2343])
+                    ("_schedule_report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2369 2373])
+                            ("schedule_next" variable nil (reparse-symbol function_parameters) [2375 2388]))                          )
+                        (reparse-symbol indented_block_body) [2348 3971])
+                    ("_start_daily_report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4000 4004])
+                            ("schedule_next" variable nil (reparse-symbol function_parameters) [4006 4019]))                          )
+                        (reparse-symbol indented_block_body) [3976 4604])
+                    ("_start_daily_numbers_report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4641 4645]))                          )
+                        (reparse-symbol indented_block_body) [4609 4834])
+                    ("" code nil (reparse-symbol indented_block_body) [4859 4869])
+                    ("ticket" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4885 4889])
+                            ("event" variable nil (reparse-symbol function_parameters) [4891 4896]))                          
+                        :documentation "Shows the command list for the ticket command group.")
+                        (reparse-symbol indented_block_body) [4874 5058])
+                    ("" code nil (reparse-symbol indented_block_body) [5083 5104])
+                    ("on_queue_report_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5137 5141])
+                            ("event" variable nil (reparse-symbol function_parameters) [5143 5148]))                          
+                        :documentation "Reports the queue status in ZD.")
+                        (reparse-symbol indented_block_body) [5109 5315])
+                    ("" code nil (reparse-symbol indented_block_body) [5340 5362])
+                    ("on_hp_report_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5392 5396])
+                            ("event" variable nil (reparse-symbol function_parameters) [5398 5403]))                          
+                        :documentation "Reports the High Prio queue status.")
+                        (reparse-symbol indented_block_body) [5367 5571])
+                    ("" code nil (reparse-symbol indented_block_body) [5596 5631])
+                    ("" code nil (reparse-symbol indented_block_body) [5661 5739])
+                    ("on_leaderboard_report_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5778 5782])
+                            ("event" variable nil (reparse-symbol function_parameters) [5784 5789])
+                            ("args" variable nil (reparse-symbol function_parameters) [5791 5795]))                          
+                        :documentation "Creates a ticket leaderboard for the top \\'x\\' ")
+                        (reparse-symbol indented_block_body) [5744 6549])
+                    ("" code nil (reparse-symbol indented_block_body) [6574 6595])
+                    ("on_daily_report_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6628 6632])
+                            ("event" variable nil (reparse-symbol function_parameters) [6634 6639]))                          
+                        :documentation "Generates report for ticket q, HP, and burn total.")
+                        (reparse-symbol indented_block_body) [6600 6831])
+                    ("" code nil (reparse-symbol indented_block_body) [6856 6894])
+                    ("on_progress_report_command" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6930 6934])
+                            ("event" variable nil (reparse-symbol function_parameters) [6936 6941])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [6943 6950]))                          
+                        :documentation "Reports progress for an individual (user id).")
+                        (reparse-symbol indented_block_body) [6899 7468])
+                    ("queue_report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7490 7494]))                          )
+                        (reparse-symbol indented_block_body) [7473 8948])
+                    ("hi_priority_queue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8975 8979]))                          )
+                        (reparse-symbol indented_block_body) [8953 10880])
+                    ("progress" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10898 10902])
+                            ("the_judiciary" variable nil (reparse-symbol function_parameters) [10904 10917])
+                            ("snowflake" variable nil (reparse-symbol function_parameters) [10919 10928]))                          )
+                        (reparse-symbol indented_block_body) [10885 11818])
+                    ("leaderboard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11839 11843])
+                            ("the_judiciary" variable nil (reparse-symbol function_parameters) [11845 11858])
+                            ("threshold" variable nil (reparse-symbol function_parameters) [11860 11869]))                          )
+                        (reparse-symbol indented_block_body) [11823 13866]))                  
+                :type "class")
+                nil [2072 13866]))          
+      :file "zd.py"
+      :pointmax 13866
+      :fsize 13865
+      :lastmodtime '(24295 47004 142050 664000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe51d3f14c"
+      :major-mode python-mode
+      :tags nil
+      :file "dashboard.py"
+      :pointmax 7029
+      :fsize 7028
+      :lastmodtime '(24295 47004 132304 238000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffe52870584"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [26 65])
+            ("os" include nil nil [66 75])
+            ("json" include nil nil [76 87])
+            ("string" include nil nil [88 101])
+            ("random" include nil nil [102 115])
+            ("humanize" include nil nil [117 132])
+            ("jsonschema" include nil nil [133 150])
+            ("disco.types.message" include nil nil [151 195])
+            ("database" include nil nil [197 225])
+            ("database.models.eng_doing" include nil nil [226 279])
+            ("plugins" include nil nil [280 324])
+            ("utils.error_reporting" include nil nil [325 373])
+            ("schema_path" variable nil nil [376 474])
+            ("get_random_str" function (:arguments 
+              ( ("size" variable nil (reparse-symbol function_parameters) [496 500]))              ) nil [477 598])
+            ("EngDoingConfig" type
+               (:superclasses ("NellyConfig")
+                :members 
+                  ( ("eng_doing_channel" variable nil (reparse-symbol indented_block_body) [639 677])
+                    ("post_secret" variable nil (reparse-symbol indented_block_body) [730 810])
+                    ("emojis" variable nil (reparse-symbol indented_block_body) [816 920]))                  
+                :type "class")
+                nil [600 921])
+            ("" code nil nil [947 963])
+            ("EngDoingPlugin" type
+               (:superclasses ("NellyPlugin")
+                :members 
+                  ( ("load" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1012 1016])
+                            ("ctx" variable nil (reparse-symbol function_parameters) [1018 1021]))                          )
+                        (reparse-symbol indented_block_body) [1003 1214])
+                    ("" code nil (reparse-symbol indented_block_body) [1237 1269])
+                    ("handle_webhook" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1293 1297]))                          )
+                        (reparse-symbol indented_block_body) [1274 2133])
+                    ("process_webhook" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2158 2162])
+                            ("data" variable nil (reparse-symbol function_parameters) [2164 2168]))                          )
+                        (reparse-symbol indented_block_body) [2138 2475])
+                    ("data_to_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2500 2504])
+                            ("data" variable nil (reparse-symbol function_parameters) [2506 2510]))                          )
+                        (reparse-symbol indented_block_body) [2480 3538])
+                    ("create_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3562 3566])
+                            ("content" variable nil (reparse-symbol function_parameters) [3568 3575])
+                            ("embed" variable nil (reparse-symbol function_parameters) [3577 3582]))                          )
+                        (reparse-symbol indented_block_body) [3543 3888])
+                    ("update_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3912 3916])
+                            ("hook_id" variable nil (reparse-symbol function_parameters) [3918 3925])
+                            ("content" variable nil (reparse-symbol function_parameters) [3927 3934])
+                            ("embed" variable nil (reparse-symbol function_parameters) [3936 3941]))                          )
+                        (reparse-symbol indented_block_body) [3893 4268]))                  
+                :type "class")
+                nil [964 4268]))          
+      :file "eng_doing.py"
+      :pointmax 4268
+      :fsize 4282
+      :lastmodtime '(24295 47004 132795 973000)
+      :unmatched-syntax '((INDENT_BLOCK 2055 . 2133) (NEWLINE 2054 . 2055) (COLON 2053 . 2054) (EXCEPT 2037 . 2043) (INDENT_BLOCK 1995 . 2029) (NEWLINE 1994 . 1995) (COLON 1993 . 1994) (TRY 1382 . 1385) (AS 1989 . 1991))))
+  :file "!Users!spen!repos!nelly!plugins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

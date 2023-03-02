@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file-1ff1e3d434c4
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff1e3d434c4"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff1e3dd2838"
+      :major-mode python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 1791
+      :fsize 1790
+      :lastmodtime '(24328 42685 471693 659000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!discord!discord_common!py!discord_common!instruments!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

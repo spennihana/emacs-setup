@@ -1,0 +1,160 @@
+;; Object semanticdb-project-database-file-1ff8cdf73ac0
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ff8cdf73ac0"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ff8cd91e0c8"
+      :major-mode python-mode
+      :tags 
+        '( ("re" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("enum" include nil nil [22 49])
+            ("pathlib" include nil nil [50 74])
+            ("typing" include nil nil [75 102])
+            ("click" include nil nil [104 116])
+            ("_PRE_COMMIT_CHOICE_PATH" variable nil nil [119 179])
+            ("_PRE_COMMIT_INSTALL_PATH" variable nil nil [180 230])
+            ("_INSTALL_PYTHON_RE" variable nil nil [231 289])
+            ("_InvalidHookReason" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("DOES_NOT_EXIST" variable nil (reparse-symbol indented_block_body) [328 351])
+                    ("NOT_PRE_COMMIT" variable nil (reparse-symbol indented_block_body) [356 379])
+                    ("WRONG_INTERPRETER" variable nil (reparse-symbol indented_block_body) [384 410]))                  
+                :type "class")
+                nil [292 411])
+            ("" code nil nil [944 946])
+            ("" code nil nil [960 1020])
+            ("if" code nil nil [2613 2657]))          
+      :file "pre-commit.py"
+      :pointmax 2657
+      :fsize 2656
+      :lastmodtime '(24570 49568 142890 308000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff8cd91e00c"
+      :major-mode python-mode
+      :tags 
+        '( ("importlib.machinery" include nil nil [1 27])
+            ("logging" include nil nil [28 42])
+            ("os" include nil nil [43 52])
+            ("re" include nil nil [53 62])
+            ("shutil" include nil nil [63 76])
+            ("sys" include nil nil [77 87])
+            ("collections" include nil nil [88 123])
+            ("functools" include nil nil [124 155])
+            ("io" include nil nil [156 179])
+            ("pathlib" include nil nil [180 204])
+            ("typing" include nil nil [205 285])
+            ("click" include nil nil [287 299])
+            ("toml" include nil nil [300 311])
+            ("shell" include nil nil [312 324])
+            ("" code nil nil [339 341])
+            ("" code nil nil [1386 1398])
+            ("" code nil nil [1489 1491])
+            ("" code nil nil [1635 1637])
+            ("" code nil nil [1651 1752])
+            ("" code nil nil [2360 2362])
+            ("" code nil nil [2378 2429])
+            ("" code nil nil [3734 3736])
+            ("" code nil nil [3752 3833])
+            ("" code nil nil [5859 5861])
+            ("" code nil nil [8656 8658])
+            ("" code nil nil [8672 8770])
+            ("" code nil nil [8784 8860])
+            ("" code nil nil [8874 8948])
+            ("" code nil nil [8962 9077])
+            ("" code nil nil [9093 9174])
+            ("" code nil nil [9792 9794])
+            ("" code nil nil [9808 9884])
+            ("" code nil nil [9898 9972])
+            ("" code nil nil [9988 10069])
+            ("" code nil nil [13449 13525])
+            ("" code nil nil [13541 13559]))          
+      :file "lint.py"
+      :pointmax 13670
+      :fsize 6988
+      :lastmodtime '(24570 50878 281623 989000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ff8cd91df5c"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("shlex" include nil nil [11 23])
+            ("shutil" include nil nil [24 37])
+            ("subprocess" include nil nil [38 55])
+            ("sys" include nil nil [56 66])
+            ("enum" include nil nil [67 94])
+            ("cachetools" include nil nil [95 124])
+            ("pathlib" include nil nil [125 149])
+            ("typing" include nil nil [150 250])
+            ("CommandType" variable nil nil [252 304])
+            ("if" code nil nil [306 479])
+            ("Host" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("OSX" variable nil (reparse-symbol indented_block_body) [503 515])
+                    ("LINUX" variable nil (reparse-symbol indented_block_body) [520 534])
+                    ("WINDOWS" variable nil (reparse-symbol indented_block_body) [539 555])
+                    ("" code nil (reparse-symbol indented_block_body) [585 589]))                  
+                :type "class")
+                nil [481 1189])
+            ("CommandException" type
+               (:documentation "Base exception for all failures related to shell operations."
+                :superclasses ("Exception")
+                :type "class")
+                nil [1191 1297])
+            ("CommandFailure" type
+               (:documentation "Exception for failures related to a command running and failing."
+                :superclasses ("CommandException")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("if" code nil (reparse-symbol indented_block_body) [1491 1614])
+                            ("super" code nil (reparse-symbol indented_block_body) [1623 1706])
+                            ("bytes" variable nil (reparse-symbol indented_block_body) [1728 1749])
+                            ("bytes" variable nil (reparse-symbol indented_block_body) [1771 1792]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1432 1436])
+                            ("CommandType" variable nil (reparse-symbol function_parameters) [1443 1454])
+                            ("CompletedProcess" variable nil (reparse-symbol function_parameters) [1464 1480]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1419 1793]))                  
+                :type "class")
+                nil [1299 2191])
+            ("CommandNotFound" type
+               (:documentation "Exception for failures related to not being able to find a command."
+                :superclasses ("CommandException")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [2355 2411]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2330 2334])
+                            ("str" variable nil (reparse-symbol function_parameters) [2341 2344]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2317 2412]))                  
+                :type "class")
+                nil [2193 2412])
+            ("_FILE" variable nil nil [2575 2608])
+            ("_TXT" variable nil nil [2609 2633])
+            ("_PATH" variable nil nil [2708 2739])
+            ("_ENV" variable nil nil [2834 2859])
+            ("UserShell" type
+               (:superclasses ("Enum")
+                :members 
+                  ( ("BASH" variable nil (reparse-symbol indented_block_body) [8649 8662])
+                    ("ZSH" variable nil (reparse-symbol indented_block_body) [8667 8678])
+                    ("FISH" variable nil (reparse-symbol indented_block_body) [8683 8696]))                  
+                :type "class")
+                nil [8622 9560])
+            ("_RC_PATHS_BY_USER_SHELL" variable nil nil [9562 9722]))          
+      :file "shell.py"
+      :pointmax 9723
+      :fsize 9722
+      :lastmodtime '(24570 50060 687993 600000)
+      :unmatched-syntax '((INDENT_BLOCK 8933 . 9560) (NEWLINE 8932 . 8933) (COLON 8931 . 8932) (MINUS 8924 . 8925) (GT 8925 . 8926) (INDENT_BLOCK 8758 . 8897) (NEWLINE 8757 . 8758) (COLON 8756 . 8757) (AT 8702 . 8703) (MINUS 8732 . 8733) (GT 8733 . 8734) (INDENT_BLOCK 8579 . 8620) (COLON 8577 . 8578) (MINUS 8570 . 8571) (GT 8571 . 8572) (NAME 8560 . 8563) (COLON 8563 . 8564) (INDENT_BLOCK 7601 . 8547) (COLON 7599 . 7600) (MINUS 7593 . 7594) (GT 7594 . 7595) (NAME 7551 . 7576) (COLON 7576 . 7577) (NAME 7506 . 7531) (COLON 7531 . 7532) (ASSIGN 7494 . 7495) (BRACK_BLOCK 7474 . 7493) (NAME 7451 . 7464) (COLON 7464 . 7465) (NAME 7424 . 7431) (COLON 7431 . 7432) (NAME 7399 . 7404) (COLON 7404 . 7405) (NAME 7366 . 7380) (COLON 7380 . 7381) (ASSIGN 7354 . 7355) (BRACK_BLOCK 7346 . 7353) (NAME 7331 . 7336) (COLON 7336 . 7337) (ASSIGN 7319 . 7320) (BRACK_BLOCK 7312 . 7318) (NAME 7299 . 7302) (COLON 7302 . 7303) (ASSIGN 7287 . 7288) (BRACK_BLOCK 7279 . 7286) (NAME 7266 . 7269) (COLON 7269 . 7270) (NAME 7241 . 7246) (COLON 7246 . 7247) (NAME 7215 . 7221) (COLON 7221 . 7222) (NAME 7189 . 7195) (COLON 7195 . 7196) (NAME 7164 . 7169) (COLON 7169 . 7170) (NAME 7142 . 7145) (COLON 7145 . 7146) (INDENT_BLOCK 3578 . 6920) (COLON 3576 . 3577) (DEF 2862 . 2865) (MINUS 3539 . 3540) (GT 3540 . 3541) (ASSIGN 3529 . 3530) (BRACK_BLOCK 3522 . 3528) (NAME 3499 . 3512) (COLON 3512 . 3513) (NAME 3472 . 3479) (COLON 3479 . 3480) (NAME 3447 . 3452) (COLON 3452 . 3453) (NAME 3414 . 3428) (COLON 3428 . 3429) (ASSIGN 3238 . 3239) (BRACK_BLOCK 3230 . 3237) (NAME 3215 . 3220) (COLON 3220 . 3221) (ASSIGN 3203 . 3204) (BRACK_BLOCK 3196 . 3202) (NAME 3183 . 3186) (COLON 3186 . 3187) (ASSIGN 3171 . 3172) (BRACK_BLOCK 3163 . 3170) (NAME 3150 . 3153) (COLON 3153 . 3154) (NAME 3125 . 3130) (COLON 3130 . 3131) (NAME 3099 . 3105) (COLON 3105 . 3106) (NAME 3073 . 3079) (COLON 3079 . 3080) (NAME 3048 . 3053) (COLON 3053 . 3054) (NAME 3026 . 3029) (COLON 3029 . 3030) (INDENT_BLOCK 2474 . 2573) (COLON 2472 . 2473) (DEF 2414 . 2417) (MINUS 2449 . 2450) (GT 2450 . 2451) (NAME 2431 . 2434) (COLON 2434 . 2435) (NAME 2336 . 2339) (COLON 2339 . 2340) (INDENT_BLOCK 2136 . 2191) (NEWLINE 2135 . 2136) (COLON 2134 . 2135) (MINUS 2127 . 2128) (GT 2128 . 2129) (ASSIGN 2119 . 2120) (BRACK_BLOCK 2109 . 2118) (NAME 2095 . 2099) (COLON 2099 . 2100) (INDENT_BLOCK 1830 . 2075) (NEWLINE 1829 . 1830) (COLON 1828 . 1829) (DEF 1798 . 1801) (MINUS 1821 . 1822) (GT 1822 . 1823) (NAME 1758 . 1762) (COLON 1769 . 1770) (NAME 1715 . 1719) (COLON 1726 . 1727) (NAME 1456 . 1462) (COLON 1462 . 1463) (NAME 1438 . 1441) (COLON 1441 . 1442) (INDENT_BLOCK 1148 . 1189) (NEWLINE 1147 . 1148) (COLON 1146 . 1147) (MINUS 1139 . 1140) (GT 1140 . 1141) (INDENT_BLOCK 1058 . 1097) (NEWLINE 1057 . 1058) (COLON 1056 . 1057) (MINUS 1049 . 1050) (GT 1050 . 1051) (INDENT_BLOCK 972 . 1009) (NEWLINE 971 . 972) (COLON 970 . 971) (MINUS 963 . 964) (GT 964 . 965) (INDENT_BLOCK 618 . 925) (NEWLINE 617 . 618) (COLON 616 . 617) (DEF 594 . 597) (MINUS 607 . 608) (GT 608 . 609))))
+  :file "!Users!spen!repos!edgar!tools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

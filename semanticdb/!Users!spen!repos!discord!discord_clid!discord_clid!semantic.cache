@@ -1,0 +1,215 @@
+;; Object semanticdb-project-database-file-1ffb4a24b1f8
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffb4a24b1f8"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffb4a24b1b8"
+      :major-mode python-mode
+      :tags nil
+      :file "config.py"
+      :pointmax 1799
+      :fsize 1798
+      :lastmodtime '(24250 56501 216046 717000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table-1ffb4a24b1d8"
+      :major-mode python-mode
+      :tags 
+        '( ("\"\"\"Extensions to the `click` package
+
+The base source (for reference): https://github.com/pallets/click/tree/7.x/click
+
+This is a collection of extensions to click to enable advanced functionality from the module, the target and purpose
+are documented in each part that is extended.
+\"\"\"" code nil nil [1 287])
+            ("enum" include nil nil [288 299])
+            ("itertools" include nil nil [300 316])
+            ("os" include nil nil [317 326])
+            ("time" include nil nil [327 338])
+            ("collections" include nil nil [339 374])
+            ("typing" include nil nil [375 465])
+            ("click" include nil nil [467 479])
+            ("click_completion" include nil nil [480 503])
+            ("click_completion.lib" include nil nil [504 548])
+            ("click_default_group" include nil nil [549 593])
+            ("discord_clid" include nil nil [595 631])
+            ("discord_clid.monitoring" include nil nil [632 675])
+            ("discord_clid.types" include nil nil [676 712])
+            ("logger" variable nil nil [714 755])
+            ("click_completion" code nil nil [946 969])
+            ("_IS_TAB_COMPLETING" variable nil nil [972 1052])
+            ("_DEFAULT_IF_NO_ARGS_OPTION" variable nil nil [1053 1102])
+            ("_IS_IN_HELP" variable nil nil [1103 1122])
+            ("TabCompletingDefaultGroup" type
+               (:documentation "
+    A subclass of DefaultGroup that plays well with click-completion's tab complete capabilities. In particular,
+    setting the default_if_no_args option effectively breaks both click-completion and click's built in completion,
+    causing them to suggest either nothing or all files in the current directory. This turns off that option when
+    we're running in completion mode, which fixes tab completion without changing the functionality when run normally.
+    "
+                :superclasses ("DefaultGroup")
+                :type "class")
+                nil [1204 2722])
+            ("Stage" type
+               (:documentation "Stages that are supported to be executed against by the `HookedGroup` below"
+                :superclasses ("enum.Enum")
+                :members 
+                  ( ("PRE_EXEC" variable nil (reparse-symbol indented_block_body) [2839 2861])
+                    ("POST_EXEC" variable nil (reparse-symbol indented_block_body) [2866 2889])
+                    ("SUCCESS" variable nil (reparse-symbol indented_block_body) [2894 2915])
+                    ("ERROR" variable nil (reparse-symbol indented_block_body) [2920 2939]))                  
+                :type "class")
+                nil [2724 2940])
+            ("LazyValuesGroup" type
+               (:documentation "Lazily creates commands on demand.
+
+    This is useful in case creation/imports of certain sub-commands are expensive and you want to isolate other
+    sub-commands from that. Note that you need to know the total set of sub-commands ahead of time to use this group.
+    "
+                :superclasses ("click.Group")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [3377 3412])
+                            ("super" code nil (reparse-symbol indented_block_body) [3421 3454]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3277 3281])
+                            ("Any" variable nil (reparse-symbol function_parameters) [3348 3351])
+                            ("Any" variable nil (reparse-symbol function_parameters) [3363 3366]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3264 3455]))                  
+                :type "class")
+                nil [2942 4474])
+            ("DelayedInitGroup" type
+               (:documentation "Allows a lazy initialization of commands.
+
+    This is similar to LazyValuesGroup but has a single function that is run once the first time commands are needed
+    on this group. It's similarly useful in case creation/imports of sub-commands are expensive, but allows you to
+    dynamically create sub-commands in the lazy init function. That is to say: you *do not* need to know the total
+    set of sub-commands ahead of time to use this group.
+    "
+                :superclasses ("click.Group")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [5071 5108])
+                            ("self" variable nil (reparse-symbol indented_block_body) [5117 5140])
+                            ("super" code nil (reparse-symbol indented_block_body) [5149 5182]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4993 4997])
+                            ("Any" variable nil (reparse-symbol function_parameters) [5042 5045])
+                            ("Any" variable nil (reparse-symbol function_parameters) [5057 5060]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [4980 5183]))                  
+                :type "class")
+                nil [4476 6049])
+            ("HookedGroup" type
+               (:documentation "click.Group extension that adds stage callback hooks for invocation
+
+    Instantiates and keeps track of a registry of callbacks registered to be made at different stages/branches during
+    a command invocation.  The purpose is to provide a middleware for actions that should be performed across all
+    invocations upon different stages of a command running.
+    "
+                :superclasses ("click.Group")
+                :type "class")
+                nil [6051 7933])
+            ("EarlyOptionHandlingGroup" type
+               (:superclasses ("click.Group")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [8097 8130])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8139 8186]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7997 8001])
+                            ("Any" variable nil (reparse-symbol function_parameters) [8068 8071])
+                            ("Any" variable nil (reparse-symbol function_parameters) [8083 8086]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [7984 8187]))                  
+                :type "class")
+                nil [7935 8700])
+            ("AliasingGroup" type
+               (:superclasses ("click.Group")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [8820 8853])
+                            ("self" variable nil (reparse-symbol indented_block_body) [8862 8885]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8753 8757])
+                            ("Any" variable nil (reparse-symbol function_parameters) [8791 8794])
+                            ("Any" variable nil (reparse-symbol function_parameters) [8806 8809]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [8740 8886]))                  
+                :type "class")
+                nil [8702 12781])
+            ("RenamedCommandHintingGroup" type
+               (:superclasses ("click.Group")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [12944 12977])
+                            ("self" variable nil (reparse-symbol indented_block_body) [12986 13027]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12847 12851])
+                            ("Any" variable nil (reparse-symbol function_parameters) [12915 12918])
+                            ("Any" variable nil (reparse-symbol function_parameters) [12930 12933]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [12834 13028]))                  
+                :type "class")
+                nil [12783 14115]))          
+      :file "click_ext.py"
+      :pointmax 16224
+      :fsize 16223
+      :lastmodtime '(24250 56501 203161 596000)
+      :unmatched-syntax '((INDENT_BLOCK 14223 . 16224) (COLON 14221 . 14222) (DEF 14117 . 14120) (MINUS 14214 . 14215) (GT 14215 . 14216) (BRACK_BLOCK 14207 . 14212) (NAME 14188 . 14201) (COLON 14201 . 14202) (PERIOD 14178 . 14179) (NAME 14164 . 14171) (COLON 14171 . 14172) (PERIOD 14154 . 14155) (NAME 14144 . 14147) (COLON 14147 . 14148) (INDENT_BLOCK 13118 . 14115) (NEWLINE 13117 . 13118) (COLON 13116 . 13117) (DEF 13033 . 13036) (MINUS 13090 . 13091) (GT 13091 . 13092) (NAME 13075 . 13083) (COLON 13083 . 13084) (PERIOD 13065 . 13066) (NAME 13055 . 13058) (COLON 13058 . 13059) (EXPONENT 12920 . 12922) (COLON 12928 . 12929) (COLON 12913 . 12914) (COMMA 12906 . 12907) (BRACK_BLOCK 12878 . 12906) (NAME 12853 . 12869) (COLON 12869 . 12870) (INDENT_BLOCK 11212 . 12781) (NEWLINE 11211 . 11212) (COLON 11210 . 11211) (MINUS 11203 . 11204) (GT 11204 . 11205) (PERIOD 11187 . 11188) (NAME 11171 . 11180) (COLON 11180 . 11181) (PERIOD 11161 . 11162) (NAME 11151 . 11154) (COLON 11154 . 11155) (INDENT_BLOCK 9124 . 11120) (NEWLINE 9123 . 9124) (COLON 9122 . 9123) (MINUS 9096 . 9097) (GT 9097 . 9098) (NAME 9081 . 9089) (COLON 9089 . 9090) (PERIOD 9071 . 9072) (NAME 9061 . 9064) (COLON 9064 . 9065) (INDENT_BLOCK 8953 . 9034) (NEWLINE 8952 . 8953) (COLON 8951 . 8952) (DEF 8891 . 8894) (MINUS 8935 . 8936) (GT 8936 . 8937) (PERIOD 8925 . 8926) (NAME 8915 . 8918) (COLON 8918 . 8919) (EXPONENT 8796 . 8798) (COLON 8804 . 8805) (COLON 8789 . 8790) (COMMA 8782 . 8783) (BRACK_BLOCK 8772 . 8782) (NAME 8759 . 8766) (COLON 8766 . 8767) (INDENT_BLOCK 8257 . 8700) (NEWLINE 8256 . 8257) (COLON 8255 . 8256) (DEF 8192 . 8195) (MINUS 8234 . 8235) (GT 8235 . 8236) (PERIOD 8224 . 8225) (NAME 8214 . 8217) (COLON 8217 . 8218) (EXPONENT 8073 . 8075) (COLON 8081 . 8082) (COLON 8066 . 8067) (COMMA 8059 . 8060) (BRACK_BLOCK 8032 . 8059) (NAME 8003 . 8022) (COLON 8022 . 8023) (INDENT_BLOCK 7328 . 7933) (NEWLINE 7327 . 7328) (COLON 7326 . 7327) (MINUS 7320 . 7321) (GT 7321 . 7322) (PERIOD 7310 . 7311) (NAME 7300 . 7303) (COLON 7303 . 7304) (INDENT_BLOCK 7115 . 7278) (NEWLINE 7114 . 7115) (COLON 7113 . 7114) (MINUS 7106 . 7107) (GT 7107 . 7108) (EXPONENT 7091 . 7093) (COLON 7099 . 7100) (MULT 7079 . 7080) (COLON 7084 . 7085) (PERIOD 7069 . 7070) (NAME 7059 . 7062) (COLON 7062 . 7063) (NAME 7045 . 7050) (COLON 7050 . 7051) (INDENT_BLOCK 6711 . 7012) (NEWLINE 6710 . 6711) (COLON 6709 . 6710) (MINUS 6701 . 6702) (GT 6702 . 6703) (NAME 6684 . 6692) (COLON 6692 . 6693) (NAME 6670 . 6675) (COLON 6675 . 6676) (INDENT_BLOCK 6519 . 6646) (NEWLINE 6518 . 6519) (COLON 6517 . 6518) (DEF 6464 . 6467) (MINUS 6510 . 6511) (GT 6511 . 6512) (EXPONENT 6495 . 6497) (COLON 6503 . 6504) (MULT 6483 . 6484) (COLON 6488 . 6489) (INDENT_BLOCK 5968 . 6049) (NEWLINE 5967 . 5968) (COLON 5966 . 5967) (MINUS 5940 . 5941) (GT 5941 . 5942) (NAME 5925 . 5933) (COLON 5933 . 5934) (PERIOD 5915 . 5916) (NAME 5905 . 5908) (COLON 5908 . 5909) (INDENT_BLOCK 5805 . 5878) (NEWLINE 5804 . 5805) (COLON 5803 . 5804) (MINUS 5787 . 5788) (GT 5788 . 5789) (PERIOD 5777 . 5778) (NAME 5767 . 5770) (COLON 5770 . 5771) (INDENT_BLOCK 5240 . 5738) (NEWLINE 5239 . 5240) (COLON 5238 . 5239) (DEF 5188 . 5191) (MINUS 5231 . 5232) (GT 5232 . 5233) (PERIOD 5221 . 5222) (NAME 5211 . 5214) (COLON 5214 . 5215) (EXPONENT 5047 . 5049) (COLON 5055 . 5056) (COLON 5040 . 5041) (COMMA 5033 . 5034) (BRACK_BLOCK 5023 . 5033) (NAME 4999 . 5013) (COLON 5013 . 5014) (INDENT_BLOCK 3927 . 4474) (NEWLINE 3926 . 3927) (COLON 3925 . 3926) (MINUS 3899 . 3900) (GT 3900 . 3901) (NAME 3884 . 3892) (COLON 3892 . 3893) (PERIOD 3874 . 3875) (NAME 3864 . 3867) (COLON 3867 . 3868) (INDENT_BLOCK 3795 . 3837) (NEWLINE 3794 . 3795) (COLON 3793 . 3794) (MINUS 3777 . 3778) (GT 3778 . 3779) (PERIOD 3767 . 3768) (NAME 3757 . 3760) (COLON 3760 . 3761) (INDENT_BLOCK 3543 . 3728) (NEWLINE 3542 . 3543) (COLON 3541 . 3542) (DEF 3460 . 3463) (MINUS 3530 . 3531) (GT 3531 . 3532) (ASSIGN 3522 . 3523) (BRACK_BLOCK 3516 . 3521) (NAME 3502 . 3506) (COLON 3506 . 3507) (PERIOD 3492 . 3493) (NAME 3482 . 3485) (COLON 3485 . 3486) (EXPONENT 3353 . 3355) (COLON 3361 . 3362) (COLON 3346 . 3347) (COMMA 3339 . 3340) (BRACK_BLOCK 3305 . 3339) (NAME 3283 . 3296) (COLON 3296 . 3297) (INDENT_BLOCK 2425 . 2722) (NEWLINE 2150 . 2151) (COLON 2149 . 2150) (MINUS 2123 . 2124) (GT 2124 . 2125) (BRACK_BLOCK 2116 . 2121) (NAME 2098 . 2106) (COLON 2106 . 2107) (PERIOD 2088 . 2089) (NAME 2078 . 2081) (COLON 2081 . 2082) (INDENT_BLOCK 1882 . 2051) (NEWLINE 1788 . 1789) (COLON 1787 . 1788) (DEF 1734 . 1737) (MINUS 1780 . 1781) (GT 1781 . 1782) (EXPONENT 1765 . 1767) (COLON 1773 . 1774) (MULT 1753 . 1754) (COLON 1758 . 1759) (INDENT_BLOCK 1156 . 1202) (COLON 1154 . 1155) (DEF 1125 . 1128) (MINUS 1147 . 1148) (GT 1148 . 1149)))
+    (semanticdb-table "semanticdb-table-1ffb49370974"
+      :file "types.py"
+      :fsize 5091
+      :lastmodtime '(24250 56501 227512 7000))
+    (semanticdb-table "semanticdb-table-1ffb497d9a80"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("sys" include nil nil [11 21])
+            ("warnings" include nil nil [22 37])
+            ("typing" include nil nil [38 61])
+            ("click" include nil nil [63 75])
+            ("discord_clid" include nil nil [77 124])
+            ("" code nil nil [160 303])
+            ("discord_clid.commands" include nil nil [304 392])
+            ("discord_clid.context" include nil nil [393 505])
+            ("discord_clid.logging_ext" include nil nil [506 565])
+            ("discord_clid.monitoring" include nil nil [566 609])
+            ("discord_clid.types" include nil nil [610 682])
+            ("logger" variable nil nil [684 731])
+            ("CONTEXT_SETTINGS" variable nil nil [732 790])
+            ("ClidRootGroup" type
+               (:superclasses ("RenamedCommandHintingGroup" "AliasingGroup" "LazyValuesGroup" "EarlyOptionHandlingGroup" "HookedGroup")
+                :type "class")
+                nil [1957 2671])
+            ("" code nil nil [2695 2920])
+            ("" code nil nil [2934 2995])
+            ("" code nil nil [3009 3096])
+            ("" code nil nil [3110 3211])
+            ("if" code nil nil [4180 4539]))          
+      :file "__main__.py"
+      :pointmax 4539
+      :fsize 4538
+      :lastmodtime '(24250 56501 202923 884000)
+      :unmatched-syntax '((INDENT_BLOCK 3313 . 4178) (COLON 3311 . 3312) (AT 3212 . 3213) (MINUS 3304 . 3305) (GT 3305 . 3306) (NAME 3291 . 3296) (COLON 3296 . 3297) (NAME 3280 . 3283) (COLON 3283 . 3284) (NAME 3266 . 3273) (COLON 3273 . 3274) (NAME 3237 . 3246) (COLON 3246 . 3247) (INDENT_BLOCK 2283 . 2671) (NEWLINE 2282 . 2283) (COLON 2281 . 2282) (MINUS 2274 . 2275) (GT 2275 . 2276) (PERIOD 2258 . 2259) (NAME 2242 . 2251) (COLON 2251 . 2252) (PERIOD 2232 . 2233) (NAME 2222 . 2225) (COLON 2225 . 2226) (INDENT_BLOCK 2128 . 2191) (NEWLINE 2127 . 2128) (COLON 2126 . 2127) (DEF 2081 . 2084) (MINUS 2120 . 2121) (GT 2121 . 2122) (PERIOD 2110 . 2111) (NAME 2100 . 2103) (COLON 2103 . 2104) (INDENT_BLOCK 858 . 1902) (COLON 856 . 857) (DEF 793 . 796) (MINUS 849 . 850) (GT 850 . 851) (BRACK_BLOCK 834 . 847) (NAME 811 . 828) (COLON 828 . 829)))
+    (semanticdb-table "semanticdb-table-1ffb497eb5a8"
+      :file "context.py"
+      :fsize 6938
+      :lastmodtime '(24250 56501 216225 477000))
+    (semanticdb-table "semanticdb-table-1ffb497ee2b4"
+      :file "logging_ext.py"
+      :fsize 7039
+      :lastmodtime '(24254 58400 473932 748000)))
+  :file "!Users!spen!repos!discord!discord_clid!discord_clid!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file-1ffb3675ea14
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file-1ffb3675ea14"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table-1ffb369ac040"
+      :major-mode python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("dataclasses" include nil nil [41 77])
+            ("typing" include nil nil [78 129])
+            ("grpc" include nil nil [131 142])
+            ("discord_common.ddtrace_utils" include nil nil [144 190])
+            ("T" variable nil nil [192 208])
+            ("GRPCClient" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("Type" variable nil (reparse-symbol indented_block_body) [405 423])
+                            ("Optional" variable nil (reparse-symbol indented_block_body) [446 464])
+                            ("self" variable nil (reparse-symbol indented_block_body) [473 496])
+                            ("self" variable nil (reparse-symbol indented_block_body) [505 533])
+                            ("self" variable nil (reparse-symbol indented_block_body) [542 563])
+                            ("self" variable nil (reparse-symbol indented_block_body) [572 605])
+                            ("self" variable nil (reparse-symbol indented_block_body) [614 655])
+                            ("if" code nil (reparse-symbol indented_block_body) [727 782]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [267 271])
+                            ("str" variable nil (reparse-symbol function_parameters) [302 305])
+                            ("str" variable nil (reparse-symbol function_parameters) [316 319])
+                            ("port" variable nil (reparse-symbol function_parameters) [321 325])
+                            ("read_timeout" variable nil (reparse-symbol function_parameters) [332 344])
+                            ("connect_eagerly" variable nil (reparse-symbol function_parameters) [351 366]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [245 782])
+                    ("__getattr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [803 807])
+                            ("method_name" variable nil (reparse-symbol function_parameters) [809 820]))                          )
+                        (reparse-symbol indented_block_body) [787 1009])
+                    ("_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1027 1031])
+                            ("method_name" variable nil (reparse-symbol function_parameters) [1033 1044])
+                            ("message" variable nil (reparse-symbol function_parameters) [1046 1053]))                          
+                        :documentation "Request from the discord_ai service.
+
+        :type method_name: str
+        :type message: Message
+        :return: The response
+        ")
+                        (reparse-symbol indented_block_body) [1014 1534])
+                    ("_get_client" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1555 1559]))                          )
+                        (reparse-symbol indented_block_body) [1539 1654])
+                    ("_connect_client" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1679 1683]))                          )
+                        (reparse-symbol indented_block_body) [1659 1818]))                  
+                :type "class")
+                nil [211 1818]))          
+      :file "grpc_client.py"
+      :pointmax 1818
+      :fsize 1817
+      :lastmodtime '(24343 31769 413053 493000)
+      :unmatched-syntax '((NAME 1217 . 1223) (COLON 1223 . 1224) (NAME 432 . 436) (COLON 444 . 445) (NAME 389 . 393) (COLON 403 . 404) (NAME 307 . 314) (COLON 314 . 315) (COLON 300 . 301) (COMMA 290 . 291) (BRACK_BLOCK 287 . 290) (NAME 273 . 281) (COLON 281 . 282) (NAME 228 . 235) (BRACK_BLOCK 235 . 238)))
+    (semanticdb-table "semanticdb-table-1ffb3675ea34"
+      :major-mode python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 63
+      :fsize 62
+      :lastmodtime '(24353 384 236987 995000)
+      :unmatched-syntax nil))
+  :file "!Users!spen!repos!discord!discord_common!py!discord_common!discord_ai_client!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
